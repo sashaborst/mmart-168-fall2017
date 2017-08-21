@@ -25,10 +25,6 @@ var getData = function () {
             console.log(json);
             addElement(json.statuses[0]);
             addElement(json.statuses[1]);
-            addElement(json.statuses[2]);
-            addElement(json.statuses[3]);
-            addElement(json.statuses[4]);
-            addElement(json.statuses[5]);
         });
 };
 
