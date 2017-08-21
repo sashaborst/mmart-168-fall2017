@@ -43,6 +43,7 @@ echo 'Installation instructions: https://brew.sh/'
 echo 'What is homebrew?: Homebrew is a package manager for Mac. Read more here: '
 echo 'https://brew.sh/'
 echo '--------------------------------------------------------------------------'
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
@@ -62,6 +63,7 @@ echo 'Installation instructions: https://www.hacksparrow.com/how-to-install-wget
 echo 'What is wget?: Wget is a computer program that retrieves content from web servers.'
 echo 'Read more here: https://en.wikipedia.org/wiki/Wget'
 echo '--------------------------------------------------------------------------'
+
 brew install wget
 
 echo ''
@@ -80,6 +82,7 @@ echo 'Installation instructions: https://git-scm.com/book/en/v1/Getting-Started-
 echo 'What is git?: Git is a version control and software distribution system.'
 echo 'Read more here: https://git-scm.com/video/what-is-git'
 echo '--------------------------------------------------------------------------'
+
 brew install git
 
 echo ''
@@ -98,6 +101,7 @@ echo 'Installation instructions: (just use homebrew)'
 echo 'What is postman?: Postman is an API testing client. Read more here:'
 echo 'https://www.getpostman.com/'
 echo '--------------------------------------------------------------------------'
+
 brew cask install postman
 
 echo ''
@@ -115,6 +119,7 @@ echo 'Installing Atom...'
 echo 'Installation instructions: Use brew cask install'
 echo 'What is Atom?: Atom is an IDE (like Sublime, but better + has git integration)'
 echo '--------------------------------------------------------------------------'
+
 brew cask install atom
 
 echo ''
@@ -133,6 +138,7 @@ echo 'Installation instructions: https://gist.github.com/d2s/372b5943bce17b964a7
 echo 'What is nvm?: NVM is a version manager for node.js. Read more here:'
 echo 'https://davidwalsh.name/nvm'
 echo '--------------------------------------------------------------------------'
+
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
 source ~/.profile
 
@@ -152,6 +158,7 @@ echo 'Installation instructions: https://www.digitalocean.com/community/tutorial
 echo 'What is node.js?: node.js is a server-side JavaScript platform / framework.'
 echo 'Read more here: https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm'
 echo '--------------------------------------------------------------------------'
+
 nvm install 8.4.0
 node --version
 
@@ -171,6 +178,7 @@ echo 'Installation instructions: use npm. https://gruntjs.com/getting-started'
 echo 'What is grunt?: Grunt is a way to automate JavaScript tasks (contatenation, minification, testing, etc.)'
 echo 'Read more here: https://gruntjs.com/'
 echo '--------------------------------------------------------------------------'
+
 npm install -g grunt
 npm install -g grunt-cli
 
@@ -190,4 +198,23 @@ echo 'Installation instructions: use npm.'
 echo 'What is gulp?: Like Grunt, Gulp is yet another way to automate JavaScript tasks.'
 echo 'Read more here: https://gulpjs.com/ and here: https://stackoverflow.com/questions/34287542/what-are-the-differences-between-grunt-gulp-js-and-bower-why-when-to-use-the'
 echo '--------------------------------------------------------------------------'
+
 npm install -g gulp
+
+echo ''
+echo ''
+echo '--------------------------------------------------------------------------'
+echo "  __  ___     _______       _ _   _              _____                     ";
+echo " /_ |/ _ \   |__   __|     (_) | | |            |  __ \                    ";
+echo "  | | | | |     | |_      ___| |_| |_ ___ _ __  | |__) | __ _____  ___   _ ";
+echo "  | | | | |     | \ \ /\ / / | __| __/ _ \ '__| |  ___/ '__/ _ \ \/ / | | |";
+echo "  | | |_| |     | |\ V  V /| | |_| ||  __/ |    | |   | | | (_) >  <| |_| |";
+echo "  |_|\___(_)    |_| \_/\_/ |_|\__|\__\___|_|    |_|   |_|  \___/_/\_\\__, |";
+echo "                                                                      __/ |";
+echo "                                                                     |___/ ";
+echo 'Installing Twitter Proxy...'
+echo 'Installation instructions: use npm.'
+echo 'Read more here: https://www.npmjs.com/package/twitter-proxy'
+echo '--------------------------------------------------------------------------'
+
+npm install -g twitter-proxy
