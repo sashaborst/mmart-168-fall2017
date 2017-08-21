@@ -6,15 +6,30 @@
         4. In a terminal shell, run: twitter-proxy config.json
         5. In another terminal shell, run: python -m SimpleHTTPServer 8000
         6. Navigate to http://localhost
-
-    I couldn't figure out how to get a response using fetch API...using jQuery for now
 */
+
+
+
+
+var addElement = function (status) {
+      var newDiv = document.createElement("div");
+      newDiv.innerHTML = status.text;
+      document.getElementById("results").appendChild(newDiv);
+};
+
 var getData = function () {
     var term = document.getElementById("term").value;
     fetch("http://localhost:7890/1.1/search/tweets.json?q=" + term)
         .then(function(response) { return response.json(); })
         .then(function(json) {
-            document.getElementById("results").innerHTML = JSON.stringify(json, null, "    ");
+            console.log(json);
+            addElement(json.statuses[0]);
+            addElement(json.statuses[1]);
+            addElement(json.statuses[2]);
+            addElement(json.statuses[3]);
+            addElement(json.statuses[4]);
+            addElement(json.statuses[5]);
         });
 };
+
 document.getElementById("go").addEventListener("click", getData);
