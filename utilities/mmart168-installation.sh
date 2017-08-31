@@ -44,10 +44,10 @@ echo 'What is homebrew?: Homebrew is a package manager for Mac. Read more here: 
 echo 'https://brew.sh/'
 echo '--------------------------------------------------------------------------'
 
-sudo chown -R $(whoami) /usr/local/var/homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
 sudo chown -R $(whoami) /usr/local/var/homebrew
+sudo chown -R $(whoami) /usr/local/Homebrew/
+brew update
 
 echo ''
 echo ''
