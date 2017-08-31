@@ -44,9 +44,9 @@ echo 'What is homebrew?: Homebrew is a package manager for Mac. Read more here: 
 echo 'https://brew.sh/'
 echo '--------------------------------------------------------------------------'
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo chown -R $(whoami) /usr/local/var/homebrew
 sudo chown -R $(whoami) /usr/local/Homebrew/
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
 echo ''
@@ -227,3 +227,4 @@ echo 'Read more here: https://www.npmjs.com/package/twitter-proxy'
 echo '--------------------------------------------------------------------------'
 
 npm install -g twitter-proxy
+source ~/.bash_profile
