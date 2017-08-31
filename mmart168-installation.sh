@@ -140,7 +140,12 @@ echo 'https://davidwalsh.name/nvm'
 echo '--------------------------------------------------------------------------'
 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
-source ~/.profile
+touch ~/.bash_profile
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
+echo 'source ~/.nvm/nvm.sh' >> ~/.bash_profile
+echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+
 
 echo ''
 echo ''
@@ -160,6 +165,8 @@ echo 'Read more here: https://www.tutorialspoint.com/nodejs/nodejs_introduction.
 echo '--------------------------------------------------------------------------'
 
 nvm install 8.4.0
+echo 'nvm install 8.4.0' >> ~/.bash_profile
+source ~/.bash_profile
 node --version
 
 echo ''
