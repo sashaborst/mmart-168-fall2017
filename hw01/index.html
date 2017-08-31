@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>MMART 168 - HW01</title>
+  <meta name="description" content="HW01 for Online Games and Interactivity at Berkeley City College">
+  <meta name="author" content="MMART 168">
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="container">
+    <img id="mainImage" src="http://via.placeholder.com/300x200" alt="a simple hero image"/>
+    <p>
+      Hello, world!
+    </p>
+    <div class="buttons">
+      <button onClick="addData()">
+        Add hardcoded data
+      </button>
+      <button onClick="addDataFromJSON()">
+        Add data from JSON
+      </button>
+      <button onClick="clearData()">
+        Clear data
+      </button>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const addData = () => {
+      // YOUR CODE HERE
+      console.log("Adding data")
+    }
+
+    const addDataFromJSON = () => {
+      // YOUR CODE HERE
+      console.log("Adding data from JSON")
+    }
+
+    const clearData = () => {
+      // YOUR CODE HERE
+      console.log("Clearing Data")
+    }
+
+    const pageInfo = {
+      img: "http://placekitten.com/300/201",
+      text: "I'm a kitten!"
+    }
+
+  </script>
+</body>
+</html>
