@@ -6,6 +6,6 @@ To install the software needed for the course on a Mac, please execute the follo
 
 ```shell
 
-bash mmart168-installation.sh
+bash utilities/mmart168-installation.sh
 
 ```
