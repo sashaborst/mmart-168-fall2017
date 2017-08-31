@@ -27,14 +27,11 @@ This will basically foreshadow how to traverse a JavaScript object through an ex
 ## 6. SUBMIT
 You may submit the homework in one of two ways:
 
-
-Through Moodle: zip all of your files and upload it to the Moodle
-
-
-	- OR -
-
-
 Using GitHub (extra credit):
 Commit your updated files to your local repo
 Push your local commit to your remote repository
 Paste a link to your updated files on GitHub in the Moodle
+
+- OR -
+
+Through Moodle: zip all of your files and upload it to the Moodle
