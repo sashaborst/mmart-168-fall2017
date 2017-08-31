@@ -10,28 +10,32 @@
     <body>
         <h1><i class="fa fa-twitter"></i> Twitter Demo</h1>
         <aside class="menu">
-            <h2>Trends for You</h2>
-            <ul>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-            </ul>
+            <h2>DOM Manipulators</h2>
+            <button onClick="modifyText()">
+              Modify Text
+            </button>
+            <button onClick="changeAttribute()">
+              Change Style
+            </button>
+            <button onClick="appendElement()">
+              Append Element
+            </button>
         </aside>
         <main class="main">
-            <article id="tweet1" class="tweet">
-                <i class="fa fa-user"></i>
-                <a href="#">mmart168‏</a>
-                <span>@mmart168</span> &bull;
-                <span>August 31</span>
-                <div id="message">This is my second Tweet!</div>
-            </article>
-
             <article id="tweet2" class="tweet">
                 <i class="fa fa-user"></i>
                 <a href="#">mmart168‏</a>
                 <span>@mmart168</span> &bull;
                 <span>August 31</span>
-                <div id="message">This is my first Tweet!</div>
+                <div id="message2">This is my second Tweet!</div>
+            </article>
+
+            <article id="tweet1" class="tweet">
+                <i class="fa fa-user"></i>
+                <a href="#">mmart168‏</a>
+                <span>@mmart168</span> &bull;
+                <span>August 31</span>
+                <div id="message1">This is my first Tweet!</div>
             </article>
         </main>
         <script src="scripts/main.js"></script>
