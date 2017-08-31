@@ -47,6 +47,7 @@ echo '--------------------------------------------------------------------------
 sudo chown -R $(whoami) /usr/local/var/homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
+sudo chown -R $(whoami) /usr/local/var/homebrew
 
 echo ''
 echo ''
