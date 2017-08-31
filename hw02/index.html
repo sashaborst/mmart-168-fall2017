@@ -8,35 +8,59 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <h1><i class="fa fa-twitter"></i> Twitter Demo</h1>
+        <!-- Top Header -->
+        <h1>
+            <i class="fa fa-twitter"></i>
+            Twitter Demo
+        </h1>
+
+        <!-- Left Menu -->
         <aside class="menu">
-            <h2>DOM Manipulators</h2>
-            <button onClick="modifyText()">
-              Modify Text
-            </button>
-            <button onClick="changeAttribute()">
-              Change Style
-            </button>
-            <button onClick="appendElement()">
-              Append Element
-            </button>
+            <div class="container">
+                <h2 id="freebie">DOM Manipulators</h2>
+                <button class="btn" onClick="modifyText()">
+                    1. Modify Text
+                </button>
+                <br>
+                <button class="btn" onClick="changeLinkAndImageAttributes()">
+                    2. Change Links and Image
+                </button>
+                <br>
+                <button class="btn" onClick="changeClassAttribute()">
+                    3. Change Classes
+                </button>
+                <br>
+                <button class="btn" onClick="appendElements()">
+                    4. Append Elements
+                </button>
+            </div>
         </aside>
+
+        <!-- Tweet Panel -->
         <main class="main">
+
+            <!-- Tweet #2 -->
             <article id="tweet2" class="tweet">
                 <i class="fa fa-user"></i>
-                <a href="#">mmart168‏</a>
-                <span>@mmart168</span> &bull;
+                <a id="link2" href="#">Bynoce</a>
+                <span id="user2">@bynoce</span> &bull;
                 <span>August 31</span>
-                <div id="message2">This is my second Tweet!</div>
+                <div id="message2">
+                    #LEMONADE the Visual Album.
+                    <a href="http://BEYONCE.TIDAL.COM">http://BEYONCE.TIDAL.COM</a>
+                </div>
+                <img id="beyonce" src="https://pbs.twimg.com/profile_images/724054682579161088/3GgLeR65_400x400.jpg" />
             </article>
 
+            <!-- Tweet #1 -->
             <article id="tweet1" class="tweet">
                 <i class="fa fa-user"></i>
-                <a href="#">mmart168‏</a>
-                <span>@mmart168</span> &bull;
+                <a id="link1" href="#">mmart168‏</a>
+                <span id="user1">@mmart168</span> &bull;
                 <span>August 31</span>
                 <div id="message1">This is my first Tweet!</div>
             </article>
+
         </main>
         <script src="scripts/main.js"></script>
     </body>
