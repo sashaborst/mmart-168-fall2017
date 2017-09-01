@@ -62,4 +62,5 @@ Paste a link to your updated files on GitHub in the Moodle
 
 - OR -
 
-Through Moodle: zip all of your files and upload it to the Moodle
+### 2. Through Moodle
+Zip all of your files and upload to the Moodle
