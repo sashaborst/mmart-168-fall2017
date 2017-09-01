@@ -1,6 +1,6 @@
 const modifyText = () => {
   // YOUR CODE HERE
-  document.getElementById("freebie").innerHTML = "Example Freebie!"
+  document.querySelector("#freebie").innerHTML = "Example Freebie!"
   console.log("modifying text")
 }
 

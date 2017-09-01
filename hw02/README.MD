@@ -50,7 +50,9 @@ Update the appendElements function so that it adds the following elements to the
 
 ### 5. EXTRA CREDIT: Manipulating the DOM Using Data
 You can also modify the DOM by reading from data. If you finished the required homework and feel like doing a bit more, open example.html and try the following:
-
+* switch out the tweet index numbers and see how things change
+* try to complete the tweet2() and tweet3() functions
+* try to make a loop and output all of the Tweets (if you are familiar w/loops) 
 
 ## PART III: SUBMIT
 You may submit the homework in one of two ways:
