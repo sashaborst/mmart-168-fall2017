@@ -60,7 +60,7 @@ Commit your updated files to your local repo
 Push your local commit to your remote repository
 Paste a link to your updated files on GitHub in the Moodle
 
-- OR -
+\- OR -
 
 ### 2. Through Moodle
 Zip all of your files and upload to the Moodle
