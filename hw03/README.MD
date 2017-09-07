@@ -28,15 +28,16 @@ Draw a picture (a.k.a “tree diagram” or “schema”) of the DOM for the ind
 ## PART II: MAKE CHANGES TO MAIN.JS
 ### 1. Modifying InnerHTML
 Update the ***modifyText*** function so that it:
-* Changes the text of message2 (by setting the innerHTML property)
-* Changes the username of link2 and user2 (by setting the innerHTML property) to spell Beyonce’s username correctly.
+* Changes the text of message2 to be the message of the BeyonceTweet object
+* Changes the text of link2 and user2 to be the text and username from the BeyonceTweet object, respectively
+
 
 ### 2. Modifying Attributes: Part I
 Update the ***changeLinkAndImageAttributes*** function so that it:
-* Sets the href attribute for link1 to point to: https://twitter.com/mmart168
-* Sets the href attribute for link2 to point to: https://twitter.com/beyonce
-* Sets the src attribute for the beyonce image to point to:
-http://www.billboard.com/files/media/beyonce-2016-press-Parkwood-Entertainment-Lemonade-billboard-1548-650-4.jpg
+* Sets the href attribute for link1 to point to the first element in the links array
+* Sets the href attribute for link2 to point to the second element in the links array
+* Sets the src attribute for the beyonce image to point to the third element in the links array
+
 
 ### 3. Modifying Attributes: Part II
 Update the ***changeClassAttribute*** function so that it replaces the “tweet” class with the “tweet-pink” class for the two tweets.
