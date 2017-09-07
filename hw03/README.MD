@@ -2,6 +2,8 @@
 > * Due date: Midnight on Wednesday, 9/13
 > * To submit: See instructions in Part III
 
+## IMPLICIT: READING RESPONSE.
+You know the drill! Short reading responses are due this week as usual.
 
 ## PART I: SETUP & DRAWING
 
@@ -13,16 +15,6 @@ $ cd mmart-168-fall2017/hw02 #navigate to your hw02 directory
 $ ls #list the files
 $ open index.html #will open index.html in your default browser
 ```
-### 2. Draw the DOM
-Draw a picture (a.k.a “tree diagram” or “schema”) of the DOM for the index.html file, using the same kind of tree structure that you used last week.
-
-
-
-
-[PASTE DRAWING HERE]
-
-
-
 
 
 ## PART II: MAKE CHANGES TO MAIN.JS
