@@ -16,6 +16,12 @@ $ ls #list the files
 $ open index.html #will open index.html in your default browser
 ```
 
+### 2. If you would like, review information on DOM selectors at the following URLS:
+
+[document.getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+[document.querySelectory](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
 
 ## PART II: MAKE CHANGES TO MAIN.JS
 ### 1. Modifying InnerHTML
@@ -23,6 +29,7 @@ Update the ***modifyText*** function so that it:
 * Changes the text of message2 to be the message of the BeyonceTweet object
 * Changes the text of link2 and user2 to be the text and username from the BeyonceTweet object, respectively
 
+_Hint: If you're struggling to understand the HTML, try drawing a schema diagram like we did in class and in HW02 to get a better understanding of it. Make sure to turn this in with your assignment if you do the work! (:_
 
 ### 2. Modifying Attributes: Part I
 Update the ***changeLinkAndImageAttributes*** function so that it:
