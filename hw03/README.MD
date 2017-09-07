@@ -1,5 +1,5 @@
 # Homework 2: Intro to the DOM
-> * Due date: Midnight on Wednesday, 9/6
+> * Due date: Midnight on Wednesday, 9/13
 > * To submit: See instructions in Part III
 
 
@@ -47,18 +47,20 @@ Update the appendElements function so that it adds the following elements to the
 * An “img” element (an image) that points to an image of your choice, symbolizing something about the course.
 
 ### 5. EXTRA CREDIT: Manipulating the DOM Using Data
-You can also modify the DOM by reading from data. If you finished the required homework and feel like doing a bit more, open example.html and try the following:
-* switch out the tweet index numbers and see how things change
-* try to complete the tweet2() and tweet3() functions
-* try to make a loop and output all of the Tweets (if you are familiar w/loops)
+You can also modify the DOM by reading from data. If you finished the required homework and feel like doing a bit more, open example.html and try and make the second and third button work:
+
+* Complete the tweet2() function
+* Complete the tweet2() function
+* Add more HTML and JavaScript to output more Tweet details
+* Make a loop to output all of the Tweets (if you are familiar w/loops)
 
 ## PART III: SUBMIT
 You may submit the homework in one of two ways:
 
 ### 1. Using GitHub (extra credit):
-Commit your updated files to your local repo
-Push your local commit to your remote repository
-Paste a link to your updated files on GitHub in the Moodle
+* Commit your updated files to your local repo
+* Push your local commit to a remote repository that you create
+* Paste a link to your updated files on GitHub in the Moodle
 
 \- OR -
 
