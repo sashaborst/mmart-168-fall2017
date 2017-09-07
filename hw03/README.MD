@@ -38,7 +38,7 @@ Update the ***changeLinkAndImageAttributes*** function so that it:
 * Sets the src attribute for the beyonce image to point to:
 http://www.billboard.com/files/media/beyonce-2016-press-Parkwood-Entertainment-Lemonade-billboard-1548-650-4.jpg
 
-### 3. Modifying Attributes: II
+### 3. Modifying Attributes: Part II
 Update the ***changeClassAttribute*** function so that it replaces the “tweet” class with the “tweet-pink” class for the two tweets.
 
 ### 4. Appending Elements
