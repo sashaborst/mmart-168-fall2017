@@ -19,7 +19,7 @@ $ open index.html #will open index.html in your default browser
 ### 2. Open the homework directory in Atom
 Open Atom, then go to `File > Add Project Folder` and find the homework directory, which should be named `mmart-168-fall2017`. Click the homework directory and then click `Open` in the bottom right.
 
-_Note: You're feeling really fancy, you can use the command line. Use the command `atom` and it'll open your current directory as a project folder!_
+_Note: You're feeling really fancy, you can use the command line. Use the command `atom hw03` and it'll open the homework directory as a project folder!_
 
 ### 3. If you would like, review information on DOM selectors at the following URLS:
 
