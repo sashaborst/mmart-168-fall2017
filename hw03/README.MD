@@ -1,4 +1,4 @@
-# Homework 2: Intro to the DOM
+# Homework 3: Intro to the DOM
 > * Due date: Midnight on Wednesday, 9/13
 > * To submit: See instructions in Part III
 
