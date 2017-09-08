@@ -5,7 +5,7 @@
 ## IMPLICIT: READING RESPONSE.
 You know the drill! Short reading responses are due this week as usual.
 
-## PART I: SETUP & DRAWING
+## PART I: SETUP & REVIEW
 
 ### 1. Clone the homework from GitHub
 Open the Terminal:
@@ -16,13 +16,18 @@ $ ls #list the files
 $ open index.html #will open index.html in your default browser
 ```
 
-### 2. If you would like, review information on DOM selectors at the following URLS:
+### 2. Open the homework directory in Atom
+Open Atom, then go to `File > Add Project Folder` and find the homework directory, which should be named `mmart-168-fall2017`. Click the homework directory and then click `Open` in the bottom right.
+
+_Note: You're feeling really fancy, you can use the command line. Use the command `atom` when your working directory is the homework directory_
+
+### 3. If you would like, review information on DOM selectors at the following URLS:
 
 [document.getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
 [document.querySelectory](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 
-
+
 ## PART II: MAKE CHANGES TO MAIN.JS
 ### 1. Modifying InnerHTML
 Update the ***modifyText*** function so that it:
