@@ -10,7 +10,7 @@ const makeList = () => {
 
 const addListItem = (status) => {
     var li = document.createElement("li")
-    li.innerHTML = status.text
+    li.appendChild(document.createTextNode(status.text))
     document.querySelector("ul").appendChild(li)
 };
 
