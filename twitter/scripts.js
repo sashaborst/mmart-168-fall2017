@@ -23,4 +23,4 @@ const getData () => {
         });
 };
 
-document.querySelector("#go").addEventListener("click", getData);
+document.querySelector("#go").addEventListener("click", getData)
