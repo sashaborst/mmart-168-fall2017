@@ -51,8 +51,8 @@ Update the ***changeClassAttribute*** function so that it replaces the “tweet�
 
 ### 4. Appending Elements
 Update the appendElements function so that it adds the following elements to the bottom of tweet1:
-* An “a” element (a link) that links to our course website (https://f17.ebook.mmart.us/) and has a link text that say “Intro to JavaScript.”
-* An “img” element (an image) that points to an image of your choice, symbolizing something about the course.
+* An "a" element (a link) that links to our course website (https://f17.ebook.mmart.us/) and has a link text that say "Intro to JavaScript."
+* An "img" element (an image) that points to an image of your choice, symbolizing something about the course.
 
 ### 5. EXTRA CREDIT 1 (Recommended if you have time): Manipulating the DOM Using Data
 You can also modify the DOM by reading from data. Open using_data.html and the tweet-data.js files, and:
