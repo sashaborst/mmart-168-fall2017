@@ -4,33 +4,55 @@ const beyonceTweet = {
     text: '#LEMONADE the Visual Album.'
 }
 
-const links = ['https://twitter.com/mmart168', 'https://twitter.com/beyonce', 'http://www.billboard.com/files/media/beyonce-2016-press-Parkwood-Entertainment-Lemonade-billboard-1548-650-4.jpg']
+const links = [
+    'https://twitter.com/mmart168',
+    'https://twitter.com/beyonce',
+    'http://www.billboard.com/files/media/beyonce-2016-press-Parkwood-Entertainment-Lemonade-billboard-1548-650-4.jpg'
+]
 
 const modifyText = () => {
-  // Part 1.a. Changes the text of message2 to be the message of the BeyonceTweet object
   document.querySelector('#message2').innerHTML = beyonceTweet.text
-
-  // Part 1.b. Change the text of link2 --> text of tweet
-  document.querySelector('#link2').innerHTML = beyonceTweet.name
-  //           Change the text of user2 --> username of tweet
-  document.querySelector('#user2').innerHTML = beyonceTweet.handle
-  //           <span id="user2">@bynoce</span>
-
-
+  document.querySelector('#name2').innerHTML = beyonceTweet.name
+  document.querySelector('#handle2').innerHTML = beyonceTweet.handle
 }
 
 const changeLinkAndImageAttributes = () => {
-  // YOUR CODE HERE
-  document.querySelector('#message2').innerHTML = 'blah'
-  console.log('changing link attribute')
+  //Sets the href attribute for link1 to point to the first element in the links array
+  // Step 1: what selector?                     // #link1
+  // Step 2: what do you want to change?        // href
+  // Step 3: what do you want to change it to?  // the first item in the array
+  document.querySelector('#link1').href = links[0]
+
+  //Sets the href attribute for link2 to point to the second element in the links array
+  document.querySelector('#link2').href = links[1]
+
+  //Sets the src attribute for the beyonce image to point to the third element in the links array
+  document.querySelector('#beyonce').src = links[2]
 }
 
 const changeClassAttribute = () => {
-  // YOUR CODE HERE
-  console.log('changing class attribute')
+  //replace the “tweet” class with the “tweet-pink” class for the two tweets
+  //document.querySelector('.tweet').className = 'tweet-pink'
+  document.querySelector('#tweet1').className = 'tweet-pink'
+  document.querySelector('#tweet2').className = 'tweet-pink'
 }
 
 const appendElements = () => {
-  // YOUR CODE HERE
-  console.log('appending element')
+  // Add an “a” element (a link) to the bottom of tweet1
+  // that links to our course website (https://f17.ebook.mmart.us/)
+  // and has a link text that says “Intro to JavaScript.”
+
+  // Goal: <a href="https://f17.ebook.mmart.us/">Intro to JavaScript</a>
+
+
+  //Option 1:
+  //document.querySelector('#tweet1').innerHTML += '<a href="https://f17.ebook.mmart.us/">Intro to JavaScript</a>'
+
+  //Option 2:
+  const a = document.createElement('a')
+  const newContent = document.createTextNode('Intro to JavaScript')
+  a.appendChild(newContent)
+  a.href = 'https://f17.ebook.mmart.us/'
+  document.querySelector('#tweet1').appendChild(a)
+  //add the text node to the newly created div.
 }
