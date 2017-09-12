@@ -7,22 +7,22 @@ const beyonceTweet = {
 const links = ['https://twitter.com/mmart168', 'https://twitter.com/beyonce', 'http://www.billboard.com/files/media/beyonce-2016-press-Parkwood-Entertainment-Lemonade-billboard-1548-650-4.jpg']
 
 const modifyText = () => {
-  // YOUR CODE HERE
   document.querySelector('#freebie').innerHTML = 'Example Freebie!'
   console.log('modifying text')
+  // YOUR CODE BELOW THIS LINE.
 }
 
 const changeLinkAndImageAttributes = () => {
-  // YOUR CODE HERE
   console.log('changing link attribute')
+  // YOUR CODE BELOW THIS LINE
 }
 
 const changeClassAttribute = () => {
-  // YOUR CODE HERE
   console.log('changing class attribute')
+  // YOUR CODE BELOW THIS LINE
 }
 
 const appendElements = () => {
-  // YOUR CODE HERE
   console.log('appending element')
+  // YOUR CODE BELOW THIS LINE
 }
