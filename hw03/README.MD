@@ -34,7 +34,8 @@ _Note: You're feeling really fancy, you can use the command line. Use the comman
 ### 1. Modifying InnerHTML
 Update the ***modifyText*** function so that it:
 * Changes the text of message2 to be the message of the BeyonceTweet object
-* Changes the text of link2 and user2 to be the text and username from the BeyonceTweet object, respectively
+* Changes the text of link2 to be the name from the BeyonceTweet object
+* Changes the text of user2 to be the handle from the BeyonceTweet object
 
 _Hint: If you're struggling to understand the HTML, try drawing a schema diagram like we did in class and in HW02 to get a better understanding of it. Make sure to turn this in with your assignment if you do the work! (:_
 
@@ -53,13 +54,13 @@ Update the appendElements function so that it adds the following elements to the
 * An “a” element (a link) that links to our course website (https://f17.ebook.mmart.us/) and has a link text that say “Intro to JavaScript.”
 * An “img” element (an image) that points to an image of your choice, symbolizing something about the course.
 
-### 5. Manipulating the DOM Using Data
+### 5. EXTRA CREDIT 1 (Recommended if you have time): Manipulating the DOM Using Data
 You can also modify the DOM by reading from data. Open using_data.html and the tweet-data.js files, and:
 
 * Complete the tweet2() function, using tweet1() as a model
 * Complete the tweet3() function
 
-### 6. EXTRA CREDIT: Adding Details & Adding Loops
+### 6. EXTRA CREDIT 2: Adding Details & Adding Loops
 
 * Add more HTML and JavaScript to output more Tweet details
 * Make a loop to output all of the Tweets (if you are familiar w/loops)
