@@ -33,10 +33,41 @@ Once you have pulled down ***your version*** of the course repository, you're go
 >  * hw04/part1.html
 >  * hw04/scripts/part1.js
 > 
+> Open part1.html in Chrome, and try clicking the language links. What happens?
+> 
 > Take a look at `part1.html` and notice the three language links, and the *onClick* attribute
 > 
-> Now open the `part1.js` file, and take a look at the *setLanguage* function
+> Take a look at `part1.js` and take a look at the *setLanguage* function
 
-1. Using comments, describe in your own words what you think the *setLanguage* function does.
+Complete the following 3 tasks:
+
+1. Using comments, edit the `part1.js` file and describe in your own words what you think the *setLanguage* function does.
 2. Edit the language links in `part1.html` and replace them with different languages. To see a list of language codes, navigate here: [https://www.w3schools.com/tags/ref_language_codes.asp](https://www.w3schools.com/tags/ref_language_codes.asp).
 3. Finally, in the `part1.js` file, edit the ***setLanguage*** function so that it handles the new language codes and displays the correct message to the span element (inside the h1 element).
+
+### Part 2: Working with Live Data
+> Open the following 2 files in Atom:
+>  
+>  * hw04/part2.html
+>  * hw04/scripts/part2.js
+>
+> Open part2.html in Chrome, enter a search term into the input field, and click the "go" button. What happens? 
+> 
+> What happens if you change the language and then search again?
+> 
+> What happens if you change the search term?
+> 
+> Take a look at `part2.html` and scroll down to the new tags that are used to create the form. Note the "go" button, and the *onClick* attribute
+> 
+> Now open the `part2.js` file, and take a look at the *getData* function.
+
+Complete the following 3 tasks:
+
+1. Using comments, edit the `part2.js` file and describe in your own words what you think the *getData* function does.
+2. Open your JavaScript Console (right-click > inspect) and type `jsonData` into the console. You should see a JavaScript object that represents the Tweets returned by your search. To reference the status array, you can type `jsonData.statuses`. How would you reference the first status in the `jsonData.statuses` list?
+3. How would you reference the `text` property for the fifth status in the `jsonData.statuses` list?
+4. **Extra credit**: How would you reference the `name` property, which is inside of the `user` property for the second status in the `jsonData.statuses` list?
+
+### Part 3: Creating DOM Elements from Live Data
+
+
