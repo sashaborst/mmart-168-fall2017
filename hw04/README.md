@@ -29,7 +29,7 @@ Once you have pulled down ***your version*** of the course repository, you're go
 6. Open the hw04 folder in Atom by typing `$ atom hw04`.
 
 ### Step 3: Edit, Commit, and Push
-1. Make a small change to any file in your hw04 directory, and save it.
+1. Add your name to the first line of `part1.js`, `part2.js`, and `part3.js` inside of a comment (hint: use two double slashes to comment out a line, e.g., `// Ricky Holtz` would be line one of Ricky's homework files)
 2. In your Terminal, type: `$ git status`. It should tell you which file you changed.
 3. To "commit" this change, type: ` $ git commit -am 'My first commit'`
 4. To "push" your change to up to your github account, type: `$ git push --set-upstream origin homework04`
