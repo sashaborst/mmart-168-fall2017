@@ -19,13 +19,25 @@
             <div>
         </nav>
 
-        <!-- Header --> 
+        <!-- Header -->
         <div class="container-main">
             <h1>
                 <i class="fa fa-twitter"></i>
                 Twitter Demo: <span id="language">English</span>
             </h1>
+
+            <!-- Form -->
+            <div class="input-group">
+                <input id="term" class="form-control" type="text" placeholder="Enter search term">
+                <span class="input-group-btn">
+                    <button id="go" class="btn btn-primary" onClick="getData()">Go</button>
+                </span>
+            </div>
+            <!-- Results -->
+            <main id="results" class="main">
+
+            </main>
         </div>
-        <script src="scripts/part1.js"></script>
+        <script src="scripts/part3.js"></script>
     </body>
 </html>

@@ -2,32 +2,36 @@ document, body {
    font-family: Arial;
    color: #444;
    margin: 0px;
-   background: #F0F0F0;
+   background: #e6ecf0;
 }
-h1, h2 {
+.navbar {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+    border-bottom: solid 1px rgba(100, 100, 100, 0.3);
+}
+
+h1 {
     margin: 0px;
     font-weight: 400;
-}
-h1 {
-    height: 20vh;
-    line-height: 20vh;
+    height: 100px;
+    line-height: 100px;
     padding-left: 20px;
+    border-bottom: solid 1px #DDD;
 }
 pre {
     margin-top: 20px;
     font-size: 12px;
 }
-.container {
-    vertical-align: middle;
-    box-sizing: border-box;
-}
-.container {
-    width: 60vw;
-    min-height: 100vh;
+
+.container-main {
+    width: 55vw;
+    min-height: calc(100vh - 70px);
     margin: auto;
+    margin-top: 70px;
     display: block;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
     background: #FFF;
+}
+.input-group {
+    margin: 20px;
 }
 .fa-twitter {
     color: #1DA1F2;
@@ -50,7 +54,10 @@ pre {
 /*************************/
 /* JSON Syntax Highlight */
 /*************************/
-pre { margin-top: 20px; }
+pre {
+    background-color: #FFF;
+    border: 0px;
+}
 .string { color: #BD5667; }
 .number { color: #383578; }
 .boolean { color: #25A680; }
