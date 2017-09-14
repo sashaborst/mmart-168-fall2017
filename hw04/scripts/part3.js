@@ -63,9 +63,14 @@ const getData = () => {
             div.appendChild(textNode)
             document.getElementById("results").appendChild(div)
 
-            // output the text of the third tweet:
+            // 1. output the text of the third tweet:
 
+            // 2. output the text of the fourth tweet:
 
+            // 3. comment the code above, starting from after the clearData,
+            //    and ending right before this comment. Then, un-comment the
+            //    code below:
+            
             /*json.statuses.forEach(function (status) {
                 div = document.createElement("div")
                 div.className = "tweet"

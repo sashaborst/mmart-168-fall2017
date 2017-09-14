@@ -40,7 +40,7 @@ Once you have pulled down ***your version*** of the course repository, you're go
 >  * hw04/part1.html
 >  * hw04/scripts/part1.js
 > 
-> Open part1.html in Chrome, and try clicking the language links. What happens?
+> Open `part1.html` in Chrome, and try clicking the language links. What happens?
 > 
 > Take a look at `part1.html` and notice the three language links, and the *onClick* attribute
 > 
@@ -58,7 +58,7 @@ Complete the following 3 tasks:
 >  * hw04/part2.html
 >  * hw04/scripts/part2.js
 >
-> Open part2.html in Chrome, enter a search term into the input field, and click the "go" button. What happens? 
+> Open `part2.html` in Chrome, enter a search term into the input field, and click the "go" button. What happens? 
 > 
 > What happens if you change the language and then search again?
 > 
@@ -68,7 +68,7 @@ Complete the following 3 tasks:
 > 
 > Now open the `part2.js` file, and take a look at the *getData* function.
 
-Complete the following 3 tasks:
+Complete the following 3 tasks (and 1 Extra Credit, if possible):
 
 1. Using comments, edit the `part2.js` file and describe in your own words what you think the *getData* function does.
 2. Open your JavaScript Console (right-click > inspect) and type `jsonData` into the console. You should see a JavaScript object that represents the Tweets returned by your search. To reference the status array, you can type `jsonData.statuses`. How would you reference the first status in the `jsonData.statuses` list?
@@ -76,5 +76,29 @@ Complete the following 3 tasks:
 4. **Extra credit**: How would you reference the `name` property, which is inside of the `user` property for the second status in the `jsonData.statuses` list?
 
 ### Part 3: Creating DOM Elements from Live Data
+> Open the following 2 files in Atom:
+>  
+>  * hw04/part3.html
+>  * hw04/scripts/part3.js
+>
+> Open `part3.html` in Chrome, enter a search term into the input field, and click the "go" button. What happens? 
+> 
+> What happens if you change the language and then search again?
+> 
+> What happens if you change the search term?
+> 
+> Open the `part3.js` file, and take a look at the *getData* function.
 
+Complete the following 3 tasks (and 1 Extra Credit, if possible):
 
+1. Using comments, edit the `part3.js` file and describe in your own words what you think the *getData* function does.
+2. Add some code to the inside of the *getData* function so that a third tweet also prints to the screen
+3. Add some code to the inside of the *getData* function so that a fourth tweet also prints to the screen
+4. Add some code to the inside of the *getData* function so that a fifth tweet also prints to the screen
+5. Now, comment out all of your code, starting from the line after the  *clearData()* all the way down to and including the code you just wrote. Then, un-comment the code block that begins with *json.statuses.forEach...* Refresh your browser and do another search. Describe what you think the forEach code is doing (using comments)?
+
+## Step 5: Commit your changes and push to GitHub
+1. Just as in Step three, open your Terminal and type: `$ git status`. It should tell you which file you've changed.
+2. To "commit" all of your changes, type: ` $ git commit -am 'Homework 4 updates'`
+3. To "push" your change to up to your github account, type: `$ git push`
+4. Fianlly, verify that your changes are up on GitHub by logging into your GitHub account and taking a look.
