@@ -30,12 +30,11 @@ Once you have pulled down ***your version*** of the course repository, you're go
 ### Part 1: If Statements
 > Open the following 2 files in Atom:
 >  
-  * hw04/part1.html
-  * hw04/scripts/part1.js
-
+>  * hw04/part1.html
+>  * hw04/scripts/part1.js
 > Take a look at `part1.html` and notice the three language links: 
 
-> ```html
+```html
  <ul class="nav navbar-nav navbar-right">
     <!-- Language Codes Here: https://www.w3schools.com/tags/ref_language_codes.asp -->
     <li><a href="#" onClick="setLanguage('en')">English</a></li>
@@ -43,7 +42,6 @@ Once you have pulled down ***your version*** of the course repository, you're go
     <li><a href="#" onClick="setLanguage('ru')">Russian</a></li>
 </ul>
 ```
-
 > Now open the `part1.js` file, and take a look at the ***setLanguage*** function
 
 1. Using comments, describe in your own words what you think the ***setLanguage*** function does.
