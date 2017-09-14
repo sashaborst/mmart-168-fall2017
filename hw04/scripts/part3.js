@@ -16,7 +16,7 @@ const setLanguage = (code) => {
     document.getElementById('language').innerHTML = language
 
     //clear form:
-    clearData()
+    getData()
 }
 
 const clearData = () => {
