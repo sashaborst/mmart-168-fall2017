@@ -98,7 +98,7 @@ Complete the following 3 tasks (and 1 Extra Credit, if possible):
 >
 > In Atom, in the `part3.js` file, take a look at the *getData* function.
 
-Complete the following 5 **required** tasks:
+Complete the following 5 tasks:
 
 1. Using comments, edit the `part3.js` file and describe in your own words what you think the *getData* function does.
 2. Add some code to the inside of the *getData* function so that a third tweet also prints to the screen
@@ -107,6 +107,8 @@ Complete the following 5 **required** tasks:
 5. Now, comment out all of your code, starting from the line after the  *clearData()* all the way down to and including the code you just wrote. Then, un-comment the code block that begins with *json.statuses.forEach...* Refresh your browser and do another search. Describe what you think the forEach code is doing (using comments)?
 
 ### Step 4: Submit Your Homework via GitHub + Moodle
+This week, you're going to submit your homework to GitHub. To do so:
+
 1. Just as in Step three, open your Terminal and type: `$ git status`. It should tell you which file you've changed.
 2. To "commit" all of your changes, type: ` $ git commit -am 'Homework 4 updates'`
 3. To "push" your change to up to your github account, type: `$ git push`
