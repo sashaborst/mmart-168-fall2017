@@ -7,8 +7,8 @@
 
 1. Log into your Github account: [https://github.com/](https://github.com/)
 2. Navigate to the course Github page: [https://github.com/vanwars/mmart-168-fall2017](https://github.com/vanwars/mmart-168-fall2017)
-3. On the top, left-hand corner of the screen, click the "Fork" button. This should create a copy of the course homework in your Github account that is yours to edit
-4. Now, open your Terminal (Mac) or GitBash (Windows), and navigate to the directory where you want to store your MAMRT168 files (using the "cd" command)
+3. On the top, right-hand corner of the screen, click the "Fork" button. This should create a copy of the course homework in your Github account that is yours to edit
+4. Now, open your Terminal (Mac) or GitBash (Windows), and navigate to the directory where you want to store your mmart-168-fall2017 files (using the "cd" command)
 5. When you're in the directory you want to be in (verify by typing "pwd"), type the following
 command: <br>`$ git clone https://github.com/{{your_github_username}}/mmart-168-fall2017.git`.<br><br> For example, because my github username is ***vanwars***, I would type: <br>`$ git clone https://github.com/vanwars/mmart-168-fall2017.git`
 
@@ -24,7 +24,14 @@ Once you have pulled down ***your version*** of the course repository, you're go
 5. Now type: `$ ls ` to list all of the files and folders inside of the mmart-168-fall2017 directory. You should see a new folder called hw04.
 6. Open the hw04 folder in Atom by typing `$ atom hw04`.
 
-## Step 3. Make Some Edits to Three JavaScript Files
+## Step 3: Edit, Commit, and Push
+1. Make a small change to any file in your hw04 directory, and save it.
+2. In your Terminal, type: `$ git status`. It should tell you which file you changed.
+3. To "commit" this change, type: ` $ git commit -am 'My first commit'`
+4. To "push" your change to up to your github account, type: `$ git push --set-upstream origin homework04`
+5. To verify that it worked, go to your github account and look for the file that you just changed on your new *homework04* branch.
+
+## Step 4. Make Some Edits to Three JavaScript Files
 **NOTE**: Do this on your own, as homework.
 
 ### Part 1: If Statements
