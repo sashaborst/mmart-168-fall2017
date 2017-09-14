@@ -32,18 +32,11 @@ Once you have pulled down ***your version*** of the course repository, you're go
 >  
 >  * hw04/part1.html
 >  * hw04/scripts/part1.js
-> Take a look at `part1.html` and notice the three language links: 
+> 
+> Take a look at `part1.html` and notice the three language links, and the *onClick* attribute
+> 
+> Now open the `part1.js` file, and take a look at the *setLanguage* function
 
-```html
- <ul class="nav navbar-nav navbar-right">
-    <!-- Language Codes Here: https://www.w3schools.com/tags/ref_language_codes.asp -->
-    <li><a href="#" onClick="setLanguage('en')">English</a></li>
-    <li><a href="#" onClick="setLanguage('es')">Spanish</a></li>
-    <li><a href="#" onClick="setLanguage('ru')">Russian</a></li>
-</ul>
-```
-> Now open the `part1.js` file, and take a look at the ***setLanguage*** function
-
-1. Using comments, describe in your own words what you think the ***setLanguage*** function does.
+1. Using comments, describe in your own words what you think the *setLanguage* function does.
 2. Edit the language links in `part1.html` and replace them with different languages. To see a list of language codes, navigate here: [https://www.w3schools.com/tags/ref_language_codes.asp](https://www.w3schools.com/tags/ref_language_codes.asp).
 3. Finally, in the `part1.js` file, edit the ***setLanguage*** function so that it handles the new language codes and displays the correct message to the span element (inside the h1 element).
