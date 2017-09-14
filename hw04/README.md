@@ -64,10 +64,11 @@ Complete the following 3 tasks:
 >  * hw04/scripts/part2.js
 >
 > Open `part2.html` in Chrome:
-> 
->  * What happens if you enter a search term into the input field, and click the "go" button?
->  * What happens if you change the language and then search again?
->  * What happens if you change the search term?
+>
+>  * Try entering a search term and clicking the "go" button
+>  * Try changing the language and searching for the term again
+>  * Try searching with a different search term
+>  * In each case, try and figure out what you think is going on
 >
 > In Atom, in the `part2.html` file, scroll down to the new tags that are used to create the form. Note the "go" button, and the *onClick* attribute
 >
@@ -81,20 +82,23 @@ Complete the following 3 tasks (and 1 Extra Credit, if possible):
 4. **Extra credit**: How would you reference the `name` property, which is inside of the `user` property for the second status in the `jsonData.statuses` list?
 
 ### Step 3: Creating DOM Elements from Live Data
+> Before completing the required tasks below, do a few things to get oriented with the files.
+>
 > Open the following 2 files in Atom:
 >  
 >  * hw04/part3.html
 >  * hw04/scripts/part3.js
 >
-> Open `part3.html` in Chrome:
-> 
->  * What happens if you enter a search term into the input field, and click the "go" button?
->  * What happens if you change the language and then search again?
->  * What happens if you change the search term?
+> Open `part3.html` in Chrome, try the same series of steps that you did in Part 2:
+>
+>  * Try entering a search term and clicking the "go" button
+>  * Try changing the language and searching for the term again
+>  * Try searching with a different search term
+>  * In each case, try and figure out what you think is going on
 >
 > In Atom, in the `part3.js` file, take a look at the *getData* function.
 
-Complete the following 3 tasks (and 1 Extra Credit, if possible):
+Complete the following 5 **required** tasks:
 
 1. Using comments, edit the `part3.js` file and describe in your own words what you think the *getData* function does.
 2. Add some code to the inside of the *getData* function so that a third tweet also prints to the screen
