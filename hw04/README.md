@@ -17,7 +17,7 @@
 command: <br>`$ git clone https://github.com/{{your_github_username}}/mmart-168-fall2017.git`.<br><br> For example, because my github username is ***vanwars***, I would type: <br>`$ git clone https://github.com/vanwars/mmart-168-fall2017.git`
 
 ### Step 2: Create a new branch called homework04
-**NOTE**: This step should also be done together in class.
+**NOTE**: This step should be done together in class.
 
 Once you have pulled down ***your version*** of the course repository, you're going to make a new branch. To do so:
 
@@ -29,6 +29,8 @@ Once you have pulled down ***your version*** of the course repository, you're go
 6. Open the hw04 folder in Atom by typing `$ atom hw04`.
 
 ### Step 3: Edit, Commit, and Push
+**NOTE**: This step should be done together in class.
+
 1. Add your name to the first line of `part1.js`, `part2.js`, and `part3.js` inside of a comment (hint: use two double slashes to comment out a line, e.g., `// Ricky Holtz` would be line one of Ricky's homework files)
 2. In your Terminal, type: `$ git status`. It should tell you which file you changed.
 3. To "commit" this change, type: ` $ git commit -am 'My first commit'`
@@ -61,15 +63,15 @@ Complete the following 3 tasks:
 >  * hw04/part2.html
 >  * hw04/scripts/part2.js
 >
-> Open `part2.html` in Chrome, enter a search term into the input field, and click the "go" button. What happens?
+> Open `part2.html` in Chrome:
+> 
+>  * What happens if you enter a search term into the input field, and click the "go" button?
+>  * What happens if you change the language and then search again?
+>  * What happens if you change the search term?
 >
-> What happens if you change the language and then search again?
+> In Atom, in the `part2.html` file, scroll down to the new tags that are used to create the form. Note the "go" button, and the *onClick* attribute
 >
-> What happens if you change the search term?
->
-> Take a look at `part2.html` and scroll down to the new tags that are used to create the form. Note the "go" button, and the *onClick* attribute
->
-> Now open the `part2.js` file, and take a look at the *getData* function.
+> In Atom, in the `part2.js` file, take a look at the *getData* function.
 
 Complete the following 3 tasks (and 1 Extra Credit, if possible):
 
@@ -84,13 +86,13 @@ Complete the following 3 tasks (and 1 Extra Credit, if possible):
 >  * hw04/part3.html
 >  * hw04/scripts/part3.js
 >
-> Open `part3.html` in Chrome, enter a search term into the input field, and click the "go" button. What happens?
+> Open `part3.html` in Chrome:
+> 
+>  * What happens if you enter a search term into the input field, and click the "go" button?
+>  * What happens if you change the language and then search again?
+>  * What happens if you change the search term?
 >
-> What happens if you change the language and then search again?
->
-> What happens if you change the search term?
->
-> Open the `part3.js` file, and take a look at the *getData* function.
+> In Atom, in the `part3.js` file, take a look at the *getData* function.
 
 Complete the following 3 tasks (and 1 Extra Credit, if possible):
 
