@@ -101,4 +101,5 @@ Complete the following 3 tasks (and 1 Extra Credit, if possible):
 1. Just as in Step three, open your Terminal and type: `$ git status`. It should tell you which file you've changed.
 2. To "commit" all of your changes, type: ` $ git commit -am 'Homework 4 updates'`
 3. To "push" your change to up to your github account, type: `$ git push`
-4. Fianlly, verify that your changes are up on GitHub by logging into your GitHub account and taking a look.
+4. Finally, verify that your changes are up on GitHub by logging into your GitHub account and taking a look.
+5. Submit your homework by paste a link to your branch into the Moodle.
