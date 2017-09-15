@@ -1,5 +1,5 @@
 # HOMEWORK 4: WORKING WITH LIVE DATA, LOOPS, AND VARIABLES
-> * Due date: Midnight on Wednesday, 9/20
+> * Due date: Midnight on Wednesday, 9/27 (2 weeks)
 > * Part I: Intended to do in class
 > * Part II: Homework
 > * To submit: See Part II, Step 4
