@@ -24,7 +24,7 @@ git clone https://github.com/<YOUR_USERNAME>/mmart-168-fall2017.git
 * In order to merge in the latest assignments you'll need
 to create a remote to the base homework repo. If this is confusing, don't worry too much - just use the following command:
 ```
-git remote add upstream https://github.com/vanwars/mmart-168-fall2017.git
+git remote add upstream https://github.com/mmart168/mmart-168-fall2017.git
 ```
 
 ### Rebasing

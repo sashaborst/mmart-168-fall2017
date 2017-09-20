@@ -16,7 +16,7 @@
 5. When you're in the directory you want to be in (verify by typing "pwd"), type the following
 command: <br>`$ git clone https://github.com/{{your_github_username}}/mmart-168-fall2017.git`.<br><br> For example, because my github username is ***vanwars***, I would type: <br>`$ git clone https://github.com/vanwars/mmart-168-fall2017.git`
 6. In addition, set the upstream repository (the course version of the code): <br>
-`$ git remote add upstream https://github.com/mmart168/fall2017.git`
+`$ git remote add upstream https://github.com/mmart168/mmart-168-fall2017.git`
 
 ### Step 2: Create a new branch called homework04
 **NOTE**: This step should be done together in class.
