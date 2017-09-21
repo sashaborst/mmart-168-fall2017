@@ -10,25 +10,43 @@
 **NOTE**: This step should be done together in class.
 
 1. Log into your Github account: [https://github.com/](https://github.com/)
+
 2. Navigate to the course Github page: [https://github.com/mmart168/mmart-168-fall2017](https://github.com/mmart168/mmart-168-fall2017)
+
 3. On the top, right-hand corner of the screen, click the "Fork" button. This should create a copy of the course homework in your Github account that is yours to edit
-4. Now, open your Terminal (Mac) or GitBash (Windows), and navigate to the directory where you want to store your mmart-168-fall2017 files (using the "cd" command)
+
+4. Now, open your Terminal (Mac) or GitBash (Windows), and navigate to the directory where you want to store your files using the **cd** command. For example, if I wanted to store my course files in my Documents folder, I would type the following at the command line: `$ cd ~/Documents`
+
 5. When you're in the directory you want to be in (verify by typing "pwd"), type the following
-command: <br>`$ git clone https://github.com/{{your_github_username}}/mmart-168-fall2017.git`.<br><br> For example, because my github username is ***vanwars***, I would type: <br>`$ git clone https://github.com/vanwars/mmart-168-fall2017.git`
-6. In addition, set the upstream repository (the course version of the code): <br>
-`$ git remote add upstream https://github.com/mmart168/mmart-168-fall2017.git`
+command: <br>`$ git clone https://github.com/{your_github_username}/mmart-168-fall2017.git`.<br><br> For example, because my github username is ***vanwars***, I would type: <br>`$ git clone https://github.com/vanwars/mmart-168-fall2017.git`
+
+6. Verify that you have cloned the correct repository by typing: `$ git remote show origin`. The fetch and push url listed should point to ***your copy of the course repository***.
+
+7. In addition, set the upstream repository (the course version of the code): <br>
+`$ git remote add upstream https://github.com/mmart168/mmart-168-fall2017.git` If you have already done this before today, you will have to add and remove the old upstream repository as follows:
+
+ ```
+ $ git remote rm upstream
+ $ git remote add upstream https://github.com/mmart168/mmart-168-fall2017.git
+ ```
+8. Verify that you are pointing to the correct upstream repository by typing: `$ git remote show upstream`. The fetch and push url listed should point to the ***mmart168 version*** of the repository.
+
+9. Finally, pull down any new or updated files from the upstream repository as follows: `$ git pull --rebase upstream master` 
 
 ### Step 2: Create a new branch called homework04
 **NOTE**: This step should be done together in class.
 
-Once you have pulled down ***your version*** of the course repository, you're going to make a new branch. To do so:
+You are now going to make your first branch. To do so:
 
 1. Navigate into the mmart-168-fall2017 directory by typing: `$ cd mmart-168-fall2017`
-2. Then type: `$ git branch homework04`
-3. Then type `$ git branch`. You should see 2 branches. One called ***master*** and one called ***homework04***. There should be an asterik next to master, indicating that ***master*** is your current branch.
+
+2. Then type: `$ git branch` You should only see one branch, **master**, listed with an asterik next to it
+
+3. Then type: `$ git branch homework04`
+
+4. Then type `$ git branch` again. You should see 2 branches. One called ***master*** and one called ***homework04***. There should be an asterik next to master, indicating that ***master*** is your current branch.
 4. Switch into your ***homework04*** branch by typing: `$ git checkout homework04`. To verify that it worked, type: `$ git branch`, and there should now be an asterik next to ***homework04***.
 5. Now type: `$ ls ` to list all of the files and folders inside of the mmart-168-fall2017 directory. You should see a new folder called hw04.
-6. Open the hw04 folder in Atom by typing `$ atom hw04`.
 
 ### Step 3: Edit, Commit, and Push
 **NOTE**: This step should be done together in class.
