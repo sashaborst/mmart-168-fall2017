@@ -51,10 +51,14 @@ You are now going to make your first branch. To do so:
 ### Step 3: Edit, Commit, and Push
 **NOTE**: This step should be done together in class.
 
-1. Add your name to the first line of `part1.js`, `part2.js`, and `part3.js` inside of a comment (hint: use two double slashes to comment out a line, e.g., `// Ricky Holtz` would be line one of Ricky's homework files)
+1. Add your name to the first line of `part1.js`, `part2.js`, and `part3.js` inside of a comment (hint: use two double slashes to comment out a line, e.g., `// Ricky Holtz` would be line one of Ricky's homework files).
+
 2. In your Terminal, type: `$ git status`. It should tell you which file you changed.
+
 3. To "commit" this change, type: ` $ git commit -am 'My first commit'`
+
 4. To "push" your change to up to your github account, type: `$ git push --set-upstream origin homework04`
+
 5. To verify that it worked, go to your github account and look for the file that you just changed on your new *homework04* branch.
 
 ## Part II: JavaScript Homework
