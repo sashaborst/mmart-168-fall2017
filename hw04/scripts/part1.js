@@ -1,3 +1,5 @@
+// Alexandra Lukinicheva
+// What you think the *setLanguage* function does?
 let language
 let languageCode
 
