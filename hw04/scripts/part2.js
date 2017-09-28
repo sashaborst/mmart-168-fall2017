@@ -19,8 +19,11 @@ const setLanguage = (code) => {
     //clear form:
     document.querySelector("pre").innerHTML = ''
 }
-
-
+// What do you think the *getData* function does?
+// This function fetch json objects based on the term and the language selected and returns them in the json format.
+// 2. jsonData.statuses[0]
+// 3. jsonData.statuses[4].text
+// 4. jsonData.statuses[1].user.name
 const getData = () => {
     const term = document.getElementById('term').value
     const baseURL = 'https://mmart168-twitter-proxy.herokuapp.com/1.1/search/tweets.json?q=' + term

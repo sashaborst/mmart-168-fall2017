@@ -28,6 +28,7 @@ const clearData = () => {
 }
 
 //Note: language codes here: https://www.w3schools.com/tags/ref_language_codes.asp
+// What do you think the *getData* function does?
 const getData = () => {
 
     const term = document.getElementById('term').value
@@ -48,41 +49,62 @@ const getData = () => {
             // clear out existing tweets:
             clearData()
 
-            // output the text of the first tweet:
-            status = json.statuses[0]
-            div = document.createElement("div")
-            div.className = "tweet"
-            textNode = document.createTextNode(status.text)
-            div.appendChild(textNode)
-            document.getElementById("results").appendChild(div)
-
-            // output the text of the second tweet:
-            status = json.statuses[1]
-            div = document.createElement("div")
-            div.className = "tweet"
-            textNode = document.createTextNode(status.text)
-            div.appendChild(textNode)
-            document.getElementById("results").appendChild(div)
-
-            // 1. Describe what you think this code is doing.
-
-            // 2. output the text of the third tweet:
-
-            // 3. output the text of the fourth tweet:
-
-            // 4. output the text of the fifth tweet:
+            // // output the text of the first tweet:
+            // status = json.statuses[0]
+            // div = document.createElement("div")
+            // div.className = "tweet"
+            // textNode = document.createTextNode(status.text)
+            // div.appendChild(textNode)
+            // document.getElementById("results").appendChild(div)
+            //
+            // // output the text of the second tweet:
+            // status = json.statuses[1]
+            // div = document.createElement("div")
+            // div.className = "tweet"
+            // textNode = document.createTextNode(status.text)
+            // div.appendChild(textNode)
+            // document.getElementById("results").appendChild(div)
+            //
+            // // 1. Describe what you think this code is doing.
+            // // The code creates a url with the search term and a language code. Then fetch the json object and outputs/appends its text into a new div.
+            //
+            // // 2. output the text of the third tweet:
+            // status = json.statuses[2]
+            // div = document.createElement("div")
+            // div.className = "tweet"
+            // textNode = document.createTextNode(status.text)
+            // div.appendChild(textNode)
+            // document.getElementById("results").appendChild(div)
+            //
+            // // 3. output the text of the fourth tweet:
+            // status = json.statuses[3]
+            // div = document.createElement("div")
+            // div.className = "tweet"
+            // textNode = document.createTextNode(status.text)
+            // div.appendChild(textNode)
+            // document.getElementById("results").appendChild(div)
+            //
+            // // 4. output the text of the fifth tweet:
+            // status = json.statuses[4]
+            // div = document.createElement("div")
+            // div.className = "tweet"
+            // textNode = document.createTextNode(status.text)
+            // div.appendChild(textNode)
+            // document.getElementById("results").appendChild(div)
 
             // 5. comment the code above, starting from after the clearData,
             //    and ending right before this comment. Then, un-comment the
             //    code below:
 
-            /*json.statuses.forEach(function (status) {
+            json.statuses.forEach(function (status) {
                 div = document.createElement("div")
                 div.className = "tweet"
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
                 document.getElementById("results").appendChild(div)
-            })*/
+            })
+            //Describe what you think the forEach code is doing?
+            // It appends all the results for the search term and language code. So instead of us outputting every individual object in the array separately, it outputs all of them.
 
         })
 };
