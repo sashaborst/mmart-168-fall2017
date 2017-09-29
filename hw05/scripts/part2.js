@@ -20,9 +20,9 @@ const setLanguage = (code) => {
 }
 
 const clearData = () => {
-    const element = document.getElementById("results")
+    const element = document.getElementById('results')
     while (element.firstChild) {
-        element.removeChild(element.firstChild);
+        element.removeChild(element.firstChild)
     }
 }
 
@@ -48,7 +48,7 @@ const getData = () => {
 
             // ---------------------- TASK 1 -----------------------------------
             // 1. Create a new variable called tweetsWithHashtags
-            // 2. Call the "filter" function on the json.statuses array. The filter function returns an array, so you can assign it `tweetsWithHashtags`. Read more about filter here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+            // 2. Call the 'filter' function on the json.statuses array. The filter function returns an array, so you can assign it `tweetsWithHashtags`. Read more about filter here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
             // 3. Write an anonymous function that checks each tweet's text, and filters out tweets that do NOT have hashtags.
             // 4. Update the forEach function so that it runs on the new tweetsWithHashtags array
 
@@ -57,12 +57,12 @@ const getData = () => {
 
 
             json.statuses.forEach((status) => {
-                div = document.createElement("div")
-                div.className = "tweet"
+                div = document.createElement('div')
+                div.className = 'tweet'
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
-                document.getElementById("results").appendChild(div)
+                document.getElementById('results').appendChild(div)
             })
 
         })
-};
+}
