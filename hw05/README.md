@@ -11,8 +11,10 @@ This homework will require some googling. As a software engineer, a lot of what 
 While on your master branch, pull the most recent changes from the upstream repository using `git pull --rebase upstream master`
 Create a new branch to do Homework 5
 
+## PART II: Reading response
+Write your reading response here!
 
-## Part II: JavaScript Homework
+## Part III: JavaScript Homework
 
 ### Step 1: Reverse a tweet
 > Open the following 2 files in Atom:
