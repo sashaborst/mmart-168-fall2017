@@ -20,9 +20,9 @@ const setLanguage = (code) => {
 }
 
 const clearData = () => {
-    const element = document.getElementById("results")
+    const element = document.getElementById('results')
     while (element.firstChild) {
-        element.removeChild(element.firstChild);
+        element.removeChild(element.firstChild)
     }
 }
 
@@ -47,14 +47,14 @@ const getData = () => {
             clearData()
 
             // ---------------------- TASK 1 -----------------------------------
-            // 1. Write a function called "reverseText" that takes a single string as an input. It should return that string with all characters reversed
-            // e.g., "Hello, world" will return "dlrow ,olleH"
+            // 1. Write a function called 'reverseText' that takes a single string as an input. It should return that string with all characters reversed
+            // e.g., 'Hello, world' will return 'dlrow ,olleH'
             // You can test this in the browser by updating the forEach function to reverse every tweet's text
             // HINT: This is a common interview question to screen out javascript devs who don't understand the language's native functions. Google around - you might find a good solution for this problem
             // Once you've written your reverse text function, write a comment describing how it works.
 
             // ---------------------- TASK 2 -----------------------------------
-            // 2. Now, write a function called "reverseTweet" that takes a single string as an input. If the string contains a hashtag (#), it should return the string.
+            // 2. Now, write a function called 'reverseTweet' that takes a single string as an input. If the string contains a hashtag (#), it should return the string.
             // If it doesn't contain a hashtag, it should return the string with all characters reversed
             // Update the forEach function so that it reverses tweets that don't have hashtags
             // HINT: Strings have a useful function called indexOf that you may find useful: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
@@ -65,12 +65,12 @@ const getData = () => {
             // EXTRA CREDIT: Add a class to reversed tweets to make their background red. This will require modifying the existing CSS!
 
             json.statuses.forEach((status) => {
-                div = document.createElement("div")
-                div.className = "tweet"
+                div = document.createElement('div')
+                div.className = 'tweet'
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
-                document.getElementById("results").appendChild(div)
+                document.getElementById('results').appendChild(div)
             })
 
         })
-};
+}

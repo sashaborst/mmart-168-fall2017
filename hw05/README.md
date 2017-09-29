@@ -12,7 +12,7 @@ While on your master branch, pull the most recent changes from the upstream repo
 Create a new branch to do Homework 5
 
 ## PART II: Reading response
-Write your reading response here!
+Edit README.MD and write your reading response here!
 
 ## Part III: JavaScript Homework
 
