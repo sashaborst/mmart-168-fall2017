@@ -1,4 +1,4 @@
-# HOMEWORK 4: MANIPULATING TWITTER DATA WITH FUNCTIONS
+# HOMEWORK 5: MANIPULATING TWITTER DATA WITH FUNCTIONS
 > * Due date: Midnight on Wednesday, 10/4 (1 week)
 > * Part I: Using Github like the cool kids we are
 > * Part II: Homework
