@@ -8,8 +8,12 @@
 This homework will require some googling. As a software engineer, a lot of what you'll need to do is express what you're TRYING to do, and then read code and documentation in order to achieve it. Remember: StackOverflow and Mozilla Developer Network (MDN) are your friend!
 
 ## Part I: Setting Up Your GitHub
-While on your master branch, pull the most recent changes from the upstream repository using `git pull --rebase upstream master`
-Create a new branch to do Homework 5
+1. Using the Terminal, navigate to your git repository: `$ cd /path/to/mmart-168-fall2017`
+2. Check out the master branch: `$ git checkout master`
+3. Pull the most recent changes from the upstream repository: `git pull --rebase upstream master`
+4. Create a new branch to do Homework 5: `$ git branch homework05`
+5. Checkout your new branch: `$ git checkout homework05`
+6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterik next to it).
 
 ## PART II: Reading response
 Edit README.MD and write your reading response here!
@@ -42,15 +46,15 @@ Once you've written your reverse text function, write a comment describing how i
 Complete the following task:
 
 1. Create a new variable called tweetsWithHashtags
-2. Call the "filter" function on the json.statuses array. The filter function returns an array, so you can assign it `tweetsWithHashtags`. Read more about filter here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+2. Call the "filter" function on the json.statuses array. The filter function returns an array, so you can assign the resulting array to the `tweetsWithHashtags` variable. Read more about filter here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 3. Write an anonymous function that checks each tweet's text, and filters out tweets that do NOT have hashtags.
 4. Update the forEach function so that it runs on the new tweetsWithHashtags array
 
 ### Step 3: Submit Your Homework via GitHub + Moodle
-This week, you're going to submit your homework to GitHub. To do so:
+This week, you're going to submit your homework using GitHub. To do so:
 
 1. Just as in Step three, open your Terminal and type: `$ git status`. It should tell you which file you've changed.
 2. To "commit" all of your changes, type: ` $ git commit -am 'Homework 5 updates'`
 3. To "push" your change to up to your github account, type: `$ git push`
 4. Finally, verify that your changes are up on GitHub by logging into your GitHub account and taking a look.
-5. Submit your homework by paste a link to your branch into the Moodle.
+5. **Submit your homework by pasting a link to your branch into the Moodle.**
