@@ -10,7 +10,7 @@ This homework will require some googling. As a software engineer, a lot of what 
 ## Part I: Setting Up Your GitHub
 1. Using the Terminal, navigate to your git repository: `$ cd /path/to/mmart-168-fall2017`
 2. Check out the master branch: `$ git checkout master`
-3. Pull the most recent changes from the upstream repository: `git pull --rebase upstream master`
+3. Pull the most recent changes from the upstream repository: `$ git pull --rebase upstream master`
 4. Create a new branch to do Homework 5: `$ git branch homework05`
 5. Checkout your new branch: `$ git checkout homework05`
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterik next to it).
