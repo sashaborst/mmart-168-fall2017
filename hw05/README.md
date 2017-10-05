@@ -16,7 +16,13 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterik next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+This summer one of my clients asked me to make him a logo for his website and business cards. His idea for the logo was to make a flower of life pattern inside of dodecahedron. We agreed on the compensation for my work and as soon as I started working - he called me and asked me if I could create it in 3D and make it rotate on his website.
+
+I thought it was a ridiculous idea, especially including the fact that I have no experience working with 3D programs. I tried to figure out how to make that in blender and Photoshop using 3d tool there, but decided that it's not worth my time for the money he was willing to spend on it.
+
+But recently I came across WebGL and Three.js, started reading about it and I was amazed by all the staff that you could do with it. On top of that, they already have huge open source libraries of objects. And I found a 3D Geometry Primitives for WebGL that had dodecahedron already in it (https://github.com/nickdesaulniers/prims). That's really cool, I'm surprised I never knew about it earlier. It seems like it has been around for a while. I guess next time I could mess around with it and see if I could figure it out.
+
+Another cool thing I've noticed by browsing the https://threejs.org/ library is that you could create 360 interactive immersive websites using React.js (https://facebook.github.io/react-vr/). That's bad ass!
 
 ## Part III: JavaScript Homework
 

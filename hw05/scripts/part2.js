@@ -42,6 +42,10 @@ const getData = () => {
 
             // output statuses:
             console.log(json.statuses)
+            const tweetsWithHashtags = json.statuses.filter(function(status) {
+              return status.text.indexOf('#') >= 0
+
+            })
 
             // clear out existing tweets:
             clearData()
@@ -56,7 +60,7 @@ const getData = () => {
             // When somebody searches for a tweet, they will only see tweets that contain hashtags.
 
 
-            json.statuses.forEach((status) => {
+            tweetsWithHashtags.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
                 textNode = document.createTextNode(status.text)

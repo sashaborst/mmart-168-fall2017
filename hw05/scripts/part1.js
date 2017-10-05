@@ -19,6 +19,35 @@ const setLanguage = (code) => {
     getData()
 }
 
+const reverseText = (str) => {
+  return str.split('').reverse().join('')
+}
+
+const reverse2 = (str) =>  {
+    // Step 1. Use the split() method to return a new array
+    const splitString = str.split('') // var splitString = "hello".split("");
+    // ["h", "e", "l", "l", "o"]
+
+    // Step 2. Use the reverse() method to reverse the new created array
+    const reverseArray = splitString.reverse() // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+    // ["o", "l", "l", "e", "h"]
+
+    // Step 3. Use the join() method to join all elements of the array into a string
+    const joinArray = reverseArray.join('') // var joinArray = ["o", "l", "l", "e", "h"].join("");
+    // "olleh"
+
+    //Step 4. Return the reversed string
+    return joinArray // "olleh"
+}
+
+const reverseTweet = (tweetText) => {
+  if (tweetText.indexOf('#') === -1) {
+    return reverseText(tweetText)
+  } else {
+    return tweetText
+  }
+}
+
 const clearData = () => {
     const element = document.getElementById('results')
     while (element.firstChild) {
@@ -67,7 +96,7 @@ const getData = () => {
             json.statuses.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
-                textNode = document.createTextNode(status.text)
+                textNode = document.createTextNode(reverseTweet(status.text))
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })
