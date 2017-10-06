@@ -2,7 +2,7 @@
 > * Due date: Midnight on Wednesday, 10/11 (1 week)
 > * Part I: Using Github because no pain, no gain
 > * Part II: Homework
-> * To submit: See Part II, Step 4
+> * To submit: See Part III, Step 4
 
 ## Preamble
 This homework will require some googling. As a software engineer, a lot of what you'll need to do is express what you're TRYING to do, and then read code and documentation in order to achieve it. Remember: StackOverflow and Mozilla Developer Network (MDN) are your friend!
@@ -30,7 +30,7 @@ At the end of this exercise, we should have a clickable star. By default, it's g
 > Open the following 2 files in Atom:
 >  
 >  * hw06/index.html
->  * hw05/scripts/toggle.js
+>  * hw06/scripts/toggle.js
 
 Complete the following 2 tasks:
 
