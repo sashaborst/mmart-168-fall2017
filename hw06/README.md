@@ -41,7 +41,7 @@ Complete the following 2 tasks:
 2. Write an arrow function called `toggle` that takes no parameters. It should find a DOM element with the id `like`. without writing a conditional statement, use the classList to toggle the `active` class.
 
 #### Extra Credit
-There's a wonderful world of CSS animations out there. Using only CSS, can you animate the transition of the star element
+There's a wonderful world of CSS animations out there. Using only CSS, can you animate the transition of the star element? For example, maybe it could grow before settling back to regular size, or spin when it's clicked. (:
 
 
 ### Step 3: Submit Your Homework via GitHub + Moodle
