@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Twitter Tester</title><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="part1.html">Main</a></li>
+                </ul>
+            <div>
+        </nav>
+
+        <!-- Header -->
+        <div class="container-main">
+            <h1>
+                <i class="fa fa-twitter"></i>
+                Twitter Demo: <span id="language">Toggle</span>
+            </h1>
+
+            <!-- Form -->
+            <div class="input-group">
+                <input id="term" class="form-control" type="text" placeholder="Enter search term">
+                <span class="input-group-btn">
+                    <button id="go" class="btn btn-primary" onClick="getData()">Go</button>
+                </span>
+            </div>
+            <!-- Results -->
+            <main id="results" class="main">
+              <div class="tweet">
+                <p>This is a sample tweet that uses the toggleLike() function.</p>
+                <div class="tweet-interactions">
+                  <span class="like" id="like" onClick="toggleLike()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                      <path d="M24.91,5.93l5.28,11.24L42.08,19a1,1,0,0,1,.56,1.69L34,29.53,36,42a1,1,0,0,1-1.47,1L24,37.17,13.44,43A1,1,0,0,1,12,42l2-12.44L5.36,20.67A1,1,0,0,1,5.92,19l11.9-1.82L23.09,5.93A1,1,0,0,1,24.91,5.93Z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="tweet">
+                <p>This is a sample tweet that uses the toggle() function.</p>
+                <div class="tweet-interactions">
+                  <span class="like" id="like" onClick="toggle()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                      <path d="M24.91,5.93l5.28,11.24L42.08,19a1,1,0,0,1,.56,1.69L34,29.53,36,42a1,1,0,0,1-1.47,1L24,37.17,13.44,43A1,1,0,0,1,12,42l2-12.44L5.36,20.67A1,1,0,0,1,5.92,19l11.9-1.82L23.09,5.93A1,1,0,0,1,24.91,5.93Z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </main>
+        </div>
+        <script src="scripts/toggle.js"></script>
+    </body>
+</html>
