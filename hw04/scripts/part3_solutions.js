@@ -29,10 +29,25 @@ const clearData = () => {
 //Note: language codes here: https://www.w3schools.com/tags/ref_language_codes.asp
 const getData = () => {
     /*
-    Same as Part 2, and it also outputs the first and second status to the screen.
-    It does this by creating a div, putting the contents of the status text inside
-    of the div, and then appending each div to the "results" div (which is
-    in the HTML of part3.html).
+    ----------------------------------------------------------------------------
+    ANSWERS
+    ----------------------------------------------------------------------------
+    In this case, the  getData function's job is to not only retrieve data, but
+    also display it to the screen in a nicer format. To do this, the code also
+    builds a bunch of div tags on-the-fly, and populates their content from the
+    data (which is an array of status objects).
+
+    In the initial code, the getData function output the first and second status
+    to the screen by (1) creating a div, (2) putting the contents of the status
+    text inside the div, and (3) appending the div to the "results" div
+    (which can be found in the HTML of part3.html).
+
+    Notice that you had to write 6 lines of code for every status that you
+    wanted to output to the "results" div. In the final part of this assignment,
+    we asked you to use the forEach function, which iterates through each status
+    and appends each one to the HTML. This strategy enables you to significantly
+    simplify your code.
+    ----------------------------------------------------------------------------
     */
     const term = document.getElementById('term').value
     const baseURL = 'https://mmart168-twitter-proxy.herokuapp.com/1.1/search/tweets.json?q=' + term
