@@ -23,7 +23,7 @@ I wasn't sure what the difference between WebJL and Three.js was. According the 
 
 When creating 3D graphics on a computer screen, we need to set up 3 basic things first - Scene, Camera and Renderer. Pretty cool, this material will go well with my video production class. The canvas for the graphics goes in HTML.
 
-Then I watched a youtube tutorial "THREE.js Part 2: Basic Scene" (https://www.youtube.com/watch?v=biZgx45Mzqo) showing how to set up the basic scene with a basic rotating cube. Besides Canvas and Camera settings, the important things to take in consideration were the Material of the object, Ambient lighting and Main light of the scene, and Rotation by x and y axes (it's possible to add z).
+Then I watched a youtube tutorial "THREE.js Part 2: Basic Scene" (https://www.youtube.com/watch?v=biZgx45Mzqo) showing how to set up the basic scene with a basic rotating cube. Besides Canvas and Camera settings, the important things to take in consideration were the Material of the object, AmbientLight and PointLight of the scene, and Rotation by x and y axes (it's possible to add z).
 
 Since Sarah suggested to use WebGl and Three.js for my individual project, I think I could implement this knowledge into a simple animation that I wanted to create for about a year now. And do it in the browser! I'm exited.
 
