@@ -16,7 +16,16 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterisk next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+
+I've read "WebGL and Javascript: Drawing Simple 3D Shapes using Three.js" (https://wowmoron.wordpress.com/2013/10/21/webgl-and-javascript-drawing-simple-3d-shapes-using-three-js/). Wowmoron.wordpress.com just seems like a very credible source. :)
+
+I wasn't sure what the difference between WebJL and Three.js was. According the article, WebJL allows you to render 3D graphics in the browser and Three.js is a JavaScript library that makes is easier to write a WebGL code. "While it might take a lot of code for even the simplest of things in WebGL, the three.js library makes things really easy and compact"- the author says.
+
+When creating 3D graphics on a computer screen, we need to set up 3 basic things first - Scene, Camera and Renderer. Pretty cool, this material will go well with my video production class. The canvas for the graphics goes in HTML.
+
+Then I watched a youtube tutorial "THREE.js Part 2: Basic Scene" (https://www.youtube.com/watch?v=biZgx45Mzqo) showing how to set up the basic scene with a basic rotating cube. Besides Canvas and Camera settings, the important things to take in consideration were the Material of the object, Ambient lighting and Main light of the scene, and Rotation by x and y axes (it's possible to add z).
+
+Since Sarah suggested to use WebGl and Three.js for my individual project, I think I could implement this knowledge into a simple animation that I wanted to create for about a year now. And do it in the browser! I'm exited.
 
 ## Part III: JavaScript Homework
 

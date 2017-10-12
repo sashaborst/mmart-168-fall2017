@@ -55,15 +55,20 @@ pre {
   fill: #7f8c8d;
 }
 
-/*.spin {
+.spin {
  -ms-transform: rotate(360deg) ;
  -webkit-transform: rotate(360deg);
  -webkit-transform-duration: 3.4s;
   transform: rotate(360deg);
-duration: 3.4s;}*/
+duration: 3.4s;}
 
 .active {
   fill: #f1c40f;
+  -ms-transform: rotate(360deg) ;
+  -webkit-transform: rotate(360deg);
+  -webkit-transform-duration: 3.4s;
+   transform: rotate(360deg);
+ duration: 3.4s;
 }
 
 .tweet-interactions {

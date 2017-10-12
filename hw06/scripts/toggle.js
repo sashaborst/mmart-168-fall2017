@@ -8,13 +8,13 @@
 // If it does, remove the 'active' class. If it doesn't add the 'active' class.
 
 const toggleLike = () => {
-  if (document.getElementById('like').classList.contains('active')) {
+  if (document.getElementById('like').classList.contains('active','spin')) {
     //remove the active class
-    document.getElementById('like').classList.remove('active')
+    document.getElementById('like').classList.remove('active','spin')
   }
   else {
   //add the active class
-  document.getElementById('like').classList.add('active')
+  document.getElementById('like').classList.add('active','spin')
 }
 }
 
