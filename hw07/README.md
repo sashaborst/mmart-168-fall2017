@@ -19,7 +19,7 @@ This homework will require some initial review and video watching. Before beginn
 * [Optional] [Examples of Adding Elements: MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 ### C. Functions
-* [Optional] [Functions: Web Design Weekly](https://web-design-weekly.com/2013/01/20/introduction-to-functions-in-javascript/)<br>Note that you'll be using arrow functions
+* [Optional] [Functions: Web Design Weekly](https://web-design-weekly.com/2013/01/20/introduction-to-functions-in-javascript/)<br>Remember that you'll be using arrow functions
 
 ### D. Conditional Statements
 * [Optional] [If / Else: W3Schools](https://www.w3schools.com/js/js_if_else.asp)
@@ -55,4 +55,3 @@ Using the strategy of your choice, write a loop over the numbers 1 - 100 that sa
 3. To "push" your change to up to your github account, type: `$ git push --set-upstream origin homework07`
 4. Finally, verify that your changes are up on GitHub by logging into your GitHub account and taking a look at your newly created homework07 branch.
 5. **Submit your homework by pasting a link to your branch into the Moodle.**
-
