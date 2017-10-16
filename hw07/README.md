@@ -9,7 +9,7 @@
 This homework will require some initial review and video watching. Before beginning, please review the following references. Some are **required**, others recommended (optional).
 
 ### A. Loops
-* **[Required]** [Intro to Loops: Lynda.com](https://www.lynda.com/JavaScript-tutorials/Loops/574716/612083-4.html])
+* **[Required]** [Intro to Loops: Lynda.com](https://www.lynda.com/JavaScript-tutorials/Loops/574716/612083-4.html)
 * [Optional] [Examples of Loops: W3Schools](https://www.w3schools.com/js/js_loop_for.asp)
 * [Optional] [Examples of Loops: MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
