@@ -12,7 +12,7 @@ const appendListElement = (text) => {
   document.querySelector('#part1').appendChild(li)
 }
 
-
+appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
 
 //------------------------------------------------------------------
 // PART II: Using a for loop, write out each person’s avatar, name, and score, based on the people array
@@ -28,9 +28,9 @@ var people = [
 ]
 
 
-// use a for loop to loop through each element
-// of the people array and output this message
-// to the screen (except show each person's info):
+// use a for loop to DRY up the printNames function
+// it should loop over the people array and append
+// the users avatar pic, a greeting, and their score to the HTML
 const printNames = () => {
   // Message 1
   const img1 = document.createElement('img')
