@@ -14,7 +14,7 @@
 
 ## Part II: Coding
 ### A. While Loops
-Using a while loop, print a message (any message you want) 100 times
+Using a while loop, print a message (any message you want) 100 times, using the **appendListElement** function.
 
 ### B. Writing to the DOM, using a Loop
 Using a for loop, write out each person’s avatar, name, and score, based on the **people** array
