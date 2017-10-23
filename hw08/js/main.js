@@ -12,6 +12,12 @@ const appendListElement = (text) => {
   document.querySelector('#part1').appendChild(li)
 }
 
+let whileLoop = 0
+while ( whileLoop < 100){
+appendListElement('AHAHAHAHAHAAA!')
+  whileLoop++
+}
+
 appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
 
 //------------------------------------------------------------------
@@ -31,30 +37,34 @@ var people = [
 // use a for loop to DRY up the printNames function
 // it should loop over the people array and append
 // the users avatar pic, a greeting, and their score to the HTML
-const printNames = () => {
-  // Message 1
-  const img1 = document.createElement('img')
-  img1.src = people[0].pic
-  img1.classList.add('avatar')
 
-  const paragraph1 = document.createElement('p')
-  const text1 = document.createTextNode('Welcome, ' + people[0].name + '! Your score is: ' + people[0].score)
-  paragraph1.appendChild(text1)
+// people.forEach((person) => {
+//
+// }
+for ( let i = 0; i < people.length; i++ )
+{
+  const printNames = () => {
+  const img = document.createElement('img')
+  img.src = people[i].pic
+  img.classList.add('avatar')
 
-  document.querySelector('#part2').appendChild(img1)
-  document.querySelector('#part2').appendChild(paragraph1)
+  const paragraph = document.createElement('p')
+  const text = document.createTextNode('Welcome, ' + people[i].name + '! Your score is: ' + people[i].score)
+  paragraph.appendChild(text)
 
-  // Message 2
-  const img2 = document.createElement('img')
-  img2.src = people[1].pic
-  img2.classList.add('avatar')
-
-  const paragraph2 = document.createElement('p')
-  const text2 = document.createTextNode('Welcome, ' + people[1].name + '! Your score is: ' + people[1].score)
-  paragraph2.appendChild(text2)
-
-  document.querySelector('#part2').appendChild(img2)
-  document.querySelector('#part2').appendChild(paragraph2)
+  document.querySelector('#part2').appendChild(img)
+  document.querySelector('#part2').appendChild(paragraph) }
+  printNames(people[i])
 }
-
-printNames()
+  // Message 2
+  // const img2 = document.createElement('img')
+  // img2.src = people[1].pic
+  // img2.classList.add('avatar')
+  //
+  // const paragraph2 = document.createElement('p')
+  // const text2 = document.createTextNode('Welcome, ' + people[1].name + '! Your score is: ' + people[1].score)
+  // paragraph2.appendChild(text2)
+  //
+  // document.querySelector('#part2').appendChild(img2)
+  // document.querySelector('#part2').appendChild(paragraph2)
+// printNames()
