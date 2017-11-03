@@ -11,7 +11,7 @@ const makeStationList = () => {
             json = json.root
             console.log(json)
 
-            //PART III.A.: Use a loop to populate the select menu with *ALL*
+            // PART III.A.: Use a loop to populate the select menu with *ALL*
             // of the stations that are returned from the BART data feed:
             const option1 = document.createElement("option")
             option1.value = 'DBRK'
@@ -22,6 +22,8 @@ const makeStationList = () => {
 
 const getArrivalTimes = () => {
     const stationList = document.getElementById('station_list')
+    // PART III.B.1: The bartStationCode should read from the list and query
+    // for the corresponding station
     const bartStationCode = 'DBRK'
     console.log('Selected Station Code:', bartStationCode)
     let url = 'https://api.bart.gov/api/etd.aspx?key=' + apiKey + '&cmd=etd' +
@@ -43,11 +45,15 @@ const getArrivalTimes = () => {
                 if (!Array.isArray(trainLine.estimate)) {
                     trainLine.estimate = [ trainLine.estimate ]
                 }
+                // PART III.B.2: Instead of printing this info to the console,
+                // output it to the DOM
                 console.log('------------------------------------------------------------------------')
                 console.log('FROM:', stationList.options[stationList.selectedIndex].text.toUpperCase())
                 console.log('TO:', trainLine.destination.toUpperCase())
                 console.log('------------------------------------------------------------------------')
                 trainLine.estimate.forEach(estimate => {
+                    // PART III.B.2. Instead of printing this info to the console,
+                    // output it to the DOM
                     console.log(
                         ' * Direction:', estimate.direction,
                         ', Leaving: ', estimate.minutes,
