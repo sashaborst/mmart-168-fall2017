@@ -1,5 +1,5 @@
 ## HOMEWORK 10: MORE PRACTICE WITH LOOPS
-> * Due date: Midnight on Wednesday, 11/08 (1 week)
+> * Due date: Midnight on Wednesday, 11/15 (2 weeks)
 > * Part I: Setting up your new homework branch
 > * Part II: Browsing the documentation
 > * Part III: Coding
