@@ -18,6 +18,9 @@ const makeStationList = () => {
             option1.innerHTML = 'Downtown Berkeley'
             document.getElementById('station_list').appendChild(option1)
         })
+        .catch((err) => {
+            console.log(err)
+        })
 }
 
 const getArrivalTimes = () => {
@@ -63,6 +66,9 @@ const getArrivalTimes = () => {
                     )
                 })
             })
+        })
+        .catch((err) => {
+            console.log(err)
         })
 }
 
