@@ -30,17 +30,18 @@ Using any loop you want, modify the ***makeStationList*** function so that it po
 
 ### B. Create a Train Arrival Display
 1. Update the ***getArrivalTimes*** function so that it queries whatever station the user selects.
-2. Instead of printing all of the train arrival estimates to the console, output the data to the DOM.
-
-### C. Extra Credit Opportunities
-1. Make the information display look beautiful using CSS (up to 20 points)
-2. For each train, output all of the following in a tasteful way (up to 20 points):
+2. Instead of printing all of the train arrival estimates to the console, output the following information to the DOM for each train:
     * time of arrival
     * direction
     * whether or not there is a delay
     * whether or not bikes are allowed
     * which platform
     * the color of the train line
+
+### C. Extra Credit Opportunities
+Make the information display look beautiful using CSS (up to 40 points)
+![BART Dashboard](assets/BART-Dashboard.png "BART Dashboard")
+
 
 ## Part IV: Submit
 1. Just as in Part II, open your Terminal and type: `$ git status`. It should tell you which files you've changed.
