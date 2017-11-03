@@ -46,5 +46,5 @@ Using any loop you want, modify the ***makeStationList*** function so that it po
 1. Just as in Part II, open your Terminal and type: `$ git status`. It should tell you which files you've changed.
 2. To "commit" all of your changes, type: ` $ git commit -am 'Completed homework 10'`
 3. To "push" your change to up to your github account, type: `$ git push --set-upstream origin homework10`
-4. Finally, verify that your changes are up on GitHub by logging into your GitHub account and taking a look at your newly created homework08 branch.
+4. Finally, verify that your changes are up on GitHub by logging into your GitHub account and taking a look at your newly created homework10 branch.
 5. **Submit your homework by pasting a link to your branch into the Moodle.**
