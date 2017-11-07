@@ -39,7 +39,7 @@ Using any loop you want, modify the ***makeStationList*** function so that it po
     * the color of the train line
 
 ### C. Extra Credit Opportunities
-Make the information display look similar to the screenshot below (similar to how BART does it) using CSS (up to 40 points)
+Make the information display look similar to the screenshot below (similar to how BART does it) using CSS (up to 40 points)<br>
 [![BART Dashboard](assets/BART-Dashboard.png "BART Dashboard")](http://www.bart.gov/)
 
 
