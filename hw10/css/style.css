@@ -1,3 +1,17 @@
 body {
     background: #F0F0F0;
 }
+
+.frame {
+  width : 500px;
+  margin: 20px auto 0px auto;
+  background: #fff;
+  padding: 10px;
+  min-height: 300px;
+}
+/*.colorsquare {
+  width: 15px;
+  height: 15px;
+  border: 1px;
+  border-color: grey;
+}*/
