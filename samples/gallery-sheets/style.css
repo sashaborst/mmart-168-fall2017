@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Sacramento');
 .table {
     width: 800px;
     margin: auto;
@@ -8,7 +8,8 @@ img {
 }
 
 .letter {
-    font-family: 'Dancing Script', cursive;
-    font-size: 70px;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Sacramento', cursive;
+    font-size: 90px;
     text-align: center;
 }
