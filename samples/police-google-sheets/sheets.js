@@ -7,7 +7,7 @@ var Sheets = function (opts) {
     if (query) {
         url += '&tq=' + query
     }
-    alert(url)
+    //alert(url)
 
 
     this.getData = (callback) => {
