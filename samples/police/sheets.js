@@ -1,9 +1,17 @@
-var Sheets = function () {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://spreadsheets.google.com/tq?callback=test&key=1kTtU8Me3ADNl2fd44cV9KK4GvFFLMqeyOZ-qy5bKvUw';
+var Sheets = function (opts) {
+    const key = opts.key
+    const query = opts.query
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    const targetUrl = 'https://spreadsheets.google.com/tq?callback=test&key=' + key
+    let url = proxyUrl + targetUrl
+    if (query) {
+        url += '&tq=' + query
+    }
+    alert(url)
+
 
     this.getData = (callback) => {
-        fetch(proxyUrl + targetUrl)
+        fetch(url)
           .then(blob => blob.text())
           .then(response => {
               response = convertToJSON(response)
@@ -27,21 +35,27 @@ var Sheets = function () {
         const records = jsonData.table.rows
 
         //add header row:
-        const row = []
-        columns.forEach(cell => {
-            row.push(cell ? cell.label : '')
-        })
-        data.push(row)
+        const keys = []
+        for (let i = 0; i < columns.length; i++) {
+            let cell = columns[i]
+            if (cell && cell.label !== '') {
+                keys.push(cell.label.toLowerCase().replace(/[&\/\\#,+\s+()$~%.'":*?<>{}]/g,'_'))
+            }
+        }
 
         //add data rows:
         records.forEach(record => {
-            const row = []
+            const row = {}
             const cells = record.c
-            cells.forEach(cell => {
-                row.push(cell ? cell.v : '')
-            })
+            for (let i = 0; i < keys.length; i++) {
+                const key = keys[i]
+                row[keys[i]] = cells[i] ? cells[i].v : ''
+            }
             data.push(row)
         })
-        return data
+        return {
+            headers: keys,
+            records: data
+        }
     }
 };
