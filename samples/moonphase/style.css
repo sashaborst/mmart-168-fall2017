@@ -1,0 +1,19 @@
+img {
+    width: 300px;
+}
+
+input, select {
+    min-width: 200px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
