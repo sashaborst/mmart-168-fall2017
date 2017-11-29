@@ -1,6 +1,6 @@
 const sheets = new Sheets({
-    key: '1kTtU8Me3ADNl2fd44cV9KK4GvFFLMqeyOZ-qy5bKvUw',
-    query: 'select E, count(A) group by E'
+    key: '16wEqV5PBvvEae8ifD7TsafVUL7CxeO1pUHgqy6AQS-E',
+    query: 'where A = 10 or A = 11 or A = 12 or A = 13'
 });
 
 sheets.getData(data => {
