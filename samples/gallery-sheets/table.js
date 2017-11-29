@@ -1,7 +1,6 @@
 //https://developers.google.com/chart/interactive/docs/querylanguage
 const sheets = new Sheets({
-    key: '1SXAqtLEsNBGgfMCsCbDtlELOalLTY7388B0cJYkPPb0',
-    query: "select * where A = 'D'"
+    key: '1SXAqtLEsNBGgfMCsCbDtlELOalLTY7388B0cJYkPPb0'
 });
 
 const loadColoringBook = (elem) => {
@@ -12,7 +11,7 @@ sheets.getData(data => {
     //loop through records and output to the screen:
     console.log(data)
     let num = 1
-    //data.records.shift()
+    data.records.shift()
     data.records.forEach(record => {
         const tr = document.createElement('tr')
         let td = document.createElement('td')

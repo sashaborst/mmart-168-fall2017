@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Images</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <select id="dish" onChange="getCalories()">
+            <option>--Select a Dish --</option>
+            <option value="where A = 1 or A = 2 or A = 3 or A = 4 or A = 5 or A = 6">Eggplant Basil</option>
+            <option value="where A = 6 or A = 7 or A = 8 or A = 9">Omlette</option>
+            <option value="where A = 10 or A = 11 or A = 12 or A = 13">Chicken Coconutmilk</option>
+        </select>
+        <p id="totalCalories"></p>
+        <table id="content" class="table">
+            <tbody></tbody>
+        </table>
+        <script type="text/javascript" src="sheets.js"></script>
+        <script type="text/javascript" src="table.js"></script>
+    </body>
+</html>
