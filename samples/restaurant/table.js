@@ -15,12 +15,12 @@ const getCalories = () => {
         data.records.forEach(record => {
             const tr = document.createElement('tr')
             let td = document.createElement('td')
-            td.innerHTML = record.B
-            td.className = 'letter'
+            td.innerHTML = '<img src="' + record.C + '" />'
             tr.appendChild(td)
 
             td = document.createElement('td')
-            td.innerHTML = '<img src="' + record.C + '" />'
+            td.innerHTML = record.B
+            td.className = 'letter'
             tr.appendChild(td)
 
             td = document.createElement('td')
