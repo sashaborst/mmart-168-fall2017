@@ -13,21 +13,31 @@ sheets.getData(data => {
     let num = 1
     data.records.shift()
     data.records.forEach(record => {
-        const tr = document.createElement('tr')
-        let td = document.createElement('td')
-        td.innerHTML = record.A
-        td.className = 'letter'
-        tr.appendChild(td)
+        //Goal:
+        /*<div class="col-sm-6 col-md-3">
+            <a class="lightbox" href="ai/a.png">
+                <img src="ai/a.png" alt="A">
+            </a>
+        </div>
+        */
 
-        td = document.createElement('td')
-        td.innerHTML = '<img src="' + record.B + '" onClick="loadColoringBook(this)" />'
-        tr.appendChild(td)
+        //container div
+        const div = document.createElement('div')
+        div.className = 'col-sm-6 col-md-3'
 
-        td = document.createElement('td')
-        td.innerHTML = record.C
-        tr.appendChild(td)
+        // link
+        const a = document.createElement('a')
+        a.className = 'lightbox'
+        a.href = record.B
 
-        document.querySelector('#content tbody').appendChild(tr)
-        ++num
+        //image
+        const img = document.createElement('img')
+        img.alt = record.A
+        img.src = record.B
+
+        div.appendChild(a)
+        a.appendChild(img)
+        document.getElementById('letter-image').appendChild(div)
+
     })
 });
