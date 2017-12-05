@@ -42,8 +42,8 @@ export default class SoundAnalyzer {
 
     //console.log('waveform:', this.waveform);
     //console.log('beat:', this.beat);
-    console.log('levels:', this.levels);
-    console.log('volume:', this.volume);
+    //console.log('levels:', this.levels);
+    //console.log('volume:', this.volume);
 
     if (this.callback) {
       this.callback({

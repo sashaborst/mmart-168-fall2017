@@ -1,6 +1,4 @@
 import AudioAnalyzer from './AudioAnalyzer/AudioAnalyzer';
-//import Debug from './Debug/Debug';
-//import datGui from './Debug/dat-gui';
 import scene from './scene';
 
 let audioAnalyzer = new AudioAnalyzer({
@@ -9,10 +7,6 @@ let audioAnalyzer = new AudioAnalyzer({
   beatDecayRate: .9,
   beatMin: .2
 });
-//let debug = new Debug;
-
-// starts dat gui debug panel
-//window.onload = () => datGui(audioAnalyzer);
 
 /**
  *  Main render loop
@@ -24,8 +18,5 @@ let audioAnalyzer = new AudioAnalyzer({
  *  beatCutOff - used to calculate when there's a beat, mainly used for debugger
  */
 audioAnalyzer.start((audioData) => {
-  // send data to canvas debugger
-  //debug.draw(audioData);
-  // send data to THREE.js scene
   scene(audioData);
 });

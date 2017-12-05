@@ -26,16 +26,15 @@ document.getElementById('scene').appendChild(renderer.domElement);
  */
 let pointLight = new THREE.PointLight(0xFFFFFF, 1, 0, 2);
 let ambientLight = new THREE.AmbientLight(0x404040);
-// set where you want the light to be directed at
 pointLight.position.set(10, 50, 130);
 
-
+// change these colors to whatever you want!
 let colors = [
-    { r:156, g:0, b:253 },
-    { r:0, g:255, b:249},
-    { r:0, g:253, b:40},
-    { r:245, g:253, b:0},
-    { r:252, g:15, b:145}
+    { r: 156, g: 0, b: 253 },
+    { r: 0, g: 255, b: 249},
+    { r: 0, g: 253, b: 40},
+    { r: 245, g: 253, b: 0},
+    { r: 252, g: 15, b: 145}
 ];
 let activeColor = 0;
 /**
@@ -75,29 +74,30 @@ let pyramid2
 let doublePyramid
 let material = new THREE.MeshLambertMaterial({color:0x00ff00, wireframe: false});
 
-/* PYRAMID */
-//This a bit weird because it's like a cylinder
-
-let geometryPyramid = new THREE.CylinderGeometry(0, 75, 100, 3, false);
+let geometryPyramid = new THREE.CylinderGeometry(0, 150, 200, 3, false);
 pyramid1 = new THREE.Mesh(geometryPyramid, material);
 pyramid1.position.x = 0;
-pyramid1.position.y = 25;
+pyramid1.position.y = 50;
 
 pyramid2 = new THREE.Mesh(geometryPyramid, material);
 pyramid2.position.x = 0;
-pyramid2.position.y = -25;
+pyramid2.position.y = -50;
 pyramid2.rotation.x = 380;
 
-doublePyramid = new THREE.Object3D();//create an empty container
-doublePyramid.add( pyramid1 );//add a mesh with geometry to it
-doublePyramid.add( pyramid2 );//when done, add the group to the scene
+doublePyramid = new THREE.Object3D();
+doublePyramid.add( pyramid1 );
+doublePyramid.add( pyramid2 );
 scene.add(doublePyramid);
+/***********************/
+
 
 // will fire every time new audio data is recieved
 export default function(audioData) {
-    let {levels, waveform, beatCutOff, isBeat, volume} = audioData;
+    let {
+        levels, waveform, beatCutOff, isBeat, volume
+    } = audioData;
 
-    // change sphere color everytime audio API detects a beat:
+    // change doublePyramid color everytime audio API detects a beat:
     if (isBeat) {
         let color = colors[activeColor];
         pyramid1.material.color = new THREE.Color(`rgb(${color.r},${color.g},${color.b})`);
