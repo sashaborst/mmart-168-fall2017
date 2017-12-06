@@ -1,6 +1,34 @@
 import THREE from 'three';
 import axis from './Debug/axis';
+var OBJLoader = require('three-obj-loader');
+OBJLoader(THREE);
 
+var loader = new OBJLoader();
+//var loader = new OBJLoader();
+
+// load a resource
+loader.load(
+	// resource URL
+	'models/monster.obj',
+	// called when resource is loaded
+	function ( object ) {
+
+		scene.add( object );
+
+	},
+	// called when loading is in progresses
+	function ( xhr ) {
+
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+	},
+	// called when loading has errors
+	function ( error ) {
+
+		console.log( 'An error happened' );
+
+	}
+);
 /**
  *  THREEjs initialization
  *  ----------------------
@@ -9,6 +37,7 @@ import axis from './Debug/axis';
 let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000);
 let scene = new THREE.Scene();
 let renderer = new THREE.WebGLRenderer();
+
 // create mouse controls
 let controls = new (require('three-orbit-controls')(THREE))(camera);
 // initial camera position
@@ -88,6 +117,8 @@ doublePyramid = new THREE.Object3D();
 doublePyramid.add( pyramid1 );
 doublePyramid.add( pyramid2 );
 scene.add(doublePyramid);
+
+
 /***********************/
 
 

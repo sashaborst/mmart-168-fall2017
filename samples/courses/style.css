@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Sacramento');
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background: #F0F0F0;
+}
+
+.letter {
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Sacramento', cursive;
+    font-size: 70px;
+    text-align: center;
+}
