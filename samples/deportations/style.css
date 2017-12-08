@@ -1,0 +1,9 @@
+/*
+    Your styles here....
+*/
+
+.bar {
+    height: 20px;
+    background: grey;
+    display: inline-block;
+}
