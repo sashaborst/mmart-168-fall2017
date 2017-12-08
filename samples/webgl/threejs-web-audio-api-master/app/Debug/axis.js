@@ -1,76 +1,77 @@
-import THREE from 'three';
+//import THREE from 'three';
+var THREE = require('three');
 
 export default function(length) {
   let axisLines = [
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
-        new THREE.Vector3(length, 0, 0), 
+        new THREE.Vector3(length, 0, 0),
       ],
-      material: new THREE.LineBasicMaterial({ 
-        linewidth: 3, 
-        color: 0xFF0000 
+      material: new THREE.LineBasicMaterial({
+        linewidth: 3,
+        color: 0xFF0000
       }),
       type: THREE.LinePieces
     },
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
         new THREE.Vector3(-length, 0, 0),
       ],
-      material: new THREE.LineDashedMaterial({ 
-        linewidth: 3, 
-        color: 0xFF0000, 
-        dashSize: 7, 
-        gapSize: 7 
+      material: new THREE.LineDashedMaterial({
+        linewidth: 3,
+        color: 0xFF0000,
+        dashSize: 7,
+        gapSize: 7
       }),
       type: THREE.LinePieces
     },
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
-        new THREE.Vector3(0, length, 0), 
+        new THREE.Vector3(0, length, 0),
       ],
-      material: new THREE.LineBasicMaterial({ 
-        linewidth: 3, 
-        color: 0x00FF00 
+      material: new THREE.LineBasicMaterial({
+        linewidth: 3,
+        color: 0x00FF00
       }),
       type: THREE.LinePieces
     },
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
         new THREE.Vector3(0, -length, 0),
       ],
-      material: new THREE.LineDashedMaterial({ 
-        linewidth: 3, 
-        color: 0x00FF00, 
-        dashSize: 7, 
-        gapSize: 7 
+      material: new THREE.LineDashedMaterial({
+        linewidth: 3,
+        color: 0x00FF00,
+        dashSize: 7,
+        gapSize: 7
       }),
       type: THREE.LinePieces
     },
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
-        new THREE.Vector3(0, 0, length), 
+        new THREE.Vector3(0, 0, length),
       ],
-      material: new THREE.LineBasicMaterial({ 
-        linewidth: 3, 
-        color: 0x0000FF 
+      material: new THREE.LineBasicMaterial({
+        linewidth: 3,
+        color: 0x0000FF
       }),
       type: THREE.LinePieces
     },
-    { 
+    {
       vertices: [
         new THREE.Vector3(0, 0, 0),
         new THREE.Vector3(0, 0, -length),
       ],
-      material: new THREE.LineDashedMaterial({ 
-        linewidth: 3, 
-        color: 0x0000FF, 
-        dashSize: 7, 
-        gapSize: 7 
+      material: new THREE.LineDashedMaterial({
+        linewidth: 3,
+        color: 0x0000FF,
+        dashSize: 7,
+        gapSize: 7
       }),
       type: THREE.LinePieces
     }
