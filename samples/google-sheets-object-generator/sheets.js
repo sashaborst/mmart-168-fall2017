@@ -35,7 +35,7 @@ var Sheets = function (opts) {
 
         // create an array of arrays with cell data
         const arrayData = records.map(record => {
-            return record.c.map((cell) => cell.v)
+            return record.c.map((cell) => cell ? cell.v : "")
         })
 
         // create two arrays - one for keys, one that contains value arrays
