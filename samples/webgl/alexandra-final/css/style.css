@@ -193,13 +193,13 @@ label {
 	line-height: 1.5em;
 	width: 60%
 }
-
+/*loading background*/
 #loading_screen {
 	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(to right, #40035D 0%, #A51BFD 100%);
 }
-
+/*folding cube*/
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -309,10 +309,7 @@ html, body {
 }
 
 @media screen and (max-width : 768px)  {
-	#logo {
-		width: 60px;
-		height: 50px;
-	}
+
 	#viewer_discretion {
 		font-size: 8px;
 	}

@@ -1,8 +1,5 @@
 /*
  * Audiovisualization using the html canvas element.
- * Please note: this is an offline-only version.
- For this version to be used online you need an
- XMLHttpRequest to load the music file!
  */
 
 let rafID = null
@@ -165,24 +162,14 @@ function initBinCanvas () {
 	controls = new THREE.OrbitControls( camera, renderer.domElement )
 
 	controls.enabled = false
-
+//background
 	let geometry = new THREE.BoxGeometry(560, 560, 100000, 15, 55, 100)
-
 	let cubeMat = new THREE.MeshBasicMaterial({color: '#4200ff', wireframe: true})
-	let testMat = new THREE.MeshStandardMaterial({
-		roughness: 0,
-		color: 'white'
-	})
 	cube_mesh = new THREE.Mesh(geometry, cubeMat)
 	scene.add(cube_mesh)
 
 	//MATERIALS###################################################################
 	let material = new THREE.MeshBasicMaterial({vertexColors: THREE.VertexColors})
-	let objMat = new THREE.MeshStandardMaterial({
-		color: '#f34093',
-		wireframe: true,
-		roughness: .3
-	})
 	let newMat = new THREE.MeshPhongMaterial({
 		color: '#9600CD'
 	})
