@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<title>Skybox (Three.js)</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+	<link rel=stylesheet href='css/base.css'/>
+</head>
+<body>
+
+<script src='js/Three.js'></script>
+<script src='js/Detector.js'></script>
+<script src='js/Stats.js'></script>
+<script src='js/OrbitControls.js'></script>
+<script src='js/THREEx.KeyboardState.js'></script>
+<script src='js/THREEx.FullScreen.js'></script>
+<script src='js/THREEx.WindowResize.js'></script>
+</div> -->
+<!-- my text -->
+<div style='width: 480px; margin: 0 auto; left: 0; right: 0; position: absolute; top: 40px; z-index: 9999999; '>
+<h1 style='color: #fff;'>Alexandra Lukinicheva Final</h1>
+<hr style='color: #fff;'>
+<p style='color: #fff;'> My final is a collection of experiments with WebGl, Three.js and Web Audio API. </p>
+<hr>
+<ul style='color: #fff;'>
+	<li><a style='color: #fff;' href='merkaba.html'>Merkaba geometric animation</a></li>
+<li><a style='color: #fff;' href='skull.html'>Skull audio visualization</a></li>
+</ul></div>
+
+<div id='ThreeJS' style='position: absolute; left:0px; top:0px'></div>
+<script>
+
+// MAIN
+
+// standard global variables
+let container, scene, camera, renderer, controls, stats;
+let keyboard = new THREEx.KeyboardState();
+let clock = new THREE.Clock();
+// custom global variables
+let cube;
+
+init();
+animate();
+
+// FUNCTIONS
+function init()
+{
+	// SCENE
+	scene = new THREE.Scene();
+	// CAMERA
+	let SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;
+	let VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
+	camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+	scene.add(camera);
+	camera.position.set(0,150,400);
+	camera.lookAt(scene.position);
+	// RENDERER
+	if ( Detector.webgl )
+		renderer = new THREE.WebGLRenderer( {antialias:true} );
+	else
+		renderer = new THREE.CanvasRenderer();
+	renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+	container = document.getElementById( 'ThreeJS' );
+	container.appendChild( renderer.domElement );
+	// EVENTS
+	THREEx.WindowResize(renderer, camera);
+	THREEx.FullScreen.bindKey({ charCode : 'm'.charCodeAt(0) });
+	// CONTROLS
+	controls = new THREE.OrbitControls( camera, renderer.domElement );
+	// STATS
+	stats = new Stats();
+	stats.domElement.style.position = 'absolute';
+	stats.domElement.style.bottom = '0px';
+	stats.domElement.style.zIndex = 100;
+	container.appendChild( stats.domElement );
+	// LIGHT
+	let light = new THREE.PointLight(0xffffff);
+	light.position.set(0,250,0);
+	scene.add(light);
+
+	////////////
+	// CUSTOM //
+	////////////
+
+	// axes
+	// let axes = new THREE.AxisHelper(100);
+	// scene.add( axes );
+
+	let imagePrefix = 'images/nebula-';
+	let directions  = ['xpos', 'xneg', 'ypos', 'yneg', 'zpos', 'zneg'];
+	let imageSuffix = '.png';
+	let skyGeometry = new THREE.CubeGeometry( 5000, 5000, 5000 );
+
+	let materialArray = [];
+	for (let i = 0; i < 6; i++)
+		materialArray.push( new THREE.MeshBasicMaterial({
+			map: THREE.ImageUtils.loadTexture( imagePrefix + directions[i] + imageSuffix ),
+			side: THREE.BackSide
+		}));
+	let skyMaterial = new THREE.MeshFaceMaterial( materialArray );
+	let skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
+	scene.add( skyBox );
+
+}
+
+function animate()
+{
+    requestAnimationFrame( animate );
+	render();
+	update();
+}
+
+function update()
+{
+	if ( keyboard.pressed('z') )
+	{
+		// do something
+	}
+
+	controls.update();
+	stats.update();
+}
+
+function render()
+{
+	renderer.render( scene, camera );
+}
+
+</script>
+
+</body>
+</html>
